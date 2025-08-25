@@ -94,20 +94,22 @@ export default function ChatBot() {
           style={{ flexDirection: "column", alignItems: "flex-start" }}
         >
           <BotMessage message="Hello! what can i assist you with" />
-          <div className="quickreplies">
-            <button
-              disabled={isBugReport !== null}
-              onClick={() => setIsBugReport(true)}
-            >
-              Report a bug
-            </button>
-            <button
-              disabled={isBugReport !== null}
-              onClick={() => setIsBugReport(false)}
-            >
-              General Inquiry
-            </button>
-          </div>
+          {isBugReport === null && (
+            <div className="quickreplies">
+              <button
+                disabled={isBugReport !== null}
+                onClick={() => setIsBugReport(true)}
+              >
+                Report a bug
+              </button>
+              <button
+                disabled={isBugReport !== null}
+                onClick={() => setIsBugReport(false)}
+              >
+                General Inquiry
+              </button>
+            </div>
+          )}
         </div>
         {isBugReport !== null && (
           <UserMessage
@@ -121,7 +123,11 @@ export default function ChatBot() {
           <form
             className="user-message bot-initial-message"
             onSubmit={handleEmailSubmit}
-            style={{ flexDirection: "column", alignItems: "flex-start", gap: "10px" }}
+            style={{
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: "10px",
+            }}
           >
             <p>Enter Your email:</p>
             <input
@@ -130,12 +136,9 @@ export default function ChatBot() {
               placeholder="your@email.com"
               required
             />
-            <button type="submit">
-              Submit
-            </button>
+            <button type="submit">Submit</button>
           </form>
         )}
-
         {userInfo.email !== null && (
           <UserMessage message={`${userInfo.email}`} />
         )}
@@ -176,7 +179,7 @@ export default function ChatBot() {
                 placeholder="Describe the issue..."
                 required
                 style={{
-                  minWidth: "300px",
+                  width: "100%",
                   minHeight: "200px",
                   maxHeight: "200px",
                   maxWidth: "300px",
@@ -201,41 +204,50 @@ export default function ChatBot() {
             style={{ flexDirection: "column", alignItems: "flex-start" }}
           >
             <BotMessage message="What is your role" />
-            <div className="quickreplies">
-              <button
-                onClick={() => setUserInfo({ ...userInfo, userRole: "viewer" })}
-              >
-                Viewer
-              </button>
-              <button
-                onClick={() =>
-                  setUserInfo({ ...userInfo, userRole: "subscriber" })
-                }
-              >
-                Subscriber
-              </button>
-              <button
-                onClick={() =>
-                  setUserInfo({ ...userInfo, userRole: "film_maker" })
-                }
-              >
-                Film Maker
-              </button>
-              <button
-                onClick={() =>
-                  setUserInfo({ ...userInfo, userRole: "advertiser" })
-                }
-              >
-                Advertiser
-              </button>
-              <button
-                onClick={() =>
-                  setUserInfo({ ...userInfo, userRole: "affiliate" })
-                }
-              >
-                Affiliate
-              </button>
-            </div>
+            {userInfo.userRole === null && (
+              <div className="quickreplies">
+                <button
+                  disabled={userInfo.userRole !== null}
+                  onClick={() =>
+                    setUserInfo({ ...userInfo, userRole: "viewer" })
+                  }
+                >
+                  Viewer
+                </button>
+                <button
+                  disabled={userInfo.userRole !== null}
+                  onClick={() =>
+                    setUserInfo({ ...userInfo, userRole: "subscriber" })
+                  }
+                >
+                  Subscriber
+                </button>
+                <button
+                  disabled={userInfo.userRole !== null}
+                  onClick={() =>
+                    setUserInfo({ ...userInfo, userRole: "film_maker" })
+                  }
+                >
+                  Film Maker
+                </button>
+                <button
+                  disabled={userInfo.userRole !== null}
+                  onClick={() =>
+                    setUserInfo({ ...userInfo, userRole: "advertiser" })
+                  }
+                >
+                  Advertiser
+                </button>
+                <button
+                  disabled={userInfo.userRole !== null}
+                  onClick={() =>
+                    setUserInfo({ ...userInfo, userRole: "affiliate" })
+                  }
+                >
+                  Affiliate
+                </button>
+              </div>
+            )}
           </div>
         )}
         {isBugReport === false &&
@@ -245,10 +257,38 @@ export default function ChatBot() {
               <UserMessage message={`${userInfo.userRole}`} />
               <BotMessage
                 message={
-                  "You can now use the field at the bottom of your screen to ask questions or report issues."
+                  "You can now use the field at the bottom of your screen to ask questions"
                 }
               />
             </>
+          )}
+        {isBugReport === true &&
+          userInfo.email !== null &&
+          userInfo.description !== null && (
+            <button
+              style={{
+                marginTop: "10px",
+                border: "none",
+                color: "#333",
+                background: "transparent",
+                padding: "8px 16px",
+                borderRadius: "4px",
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                setMessages([]);
+                setIsBugReport(null);
+                setUserInfo({
+                  email: null,
+                  userRole: null,
+                  description: null,
+                });
+                setInput("");
+                setLoading(false);
+              }}
+            >
+              Reset Chat
+            </button>
           )}
         {messages.map((msg, idx) =>
           msg.type === "bot" ? (
@@ -257,7 +297,6 @@ export default function ChatBot() {
             <UserMessage key={idx} message={msg.text} />
           )
         )}
-
         {loading && <BotTyping />}
       </div>
       <div className="input-field-x4cb14x">
@@ -287,13 +326,18 @@ export default function ChatBot() {
           disabled={loading}
           onClick={handleSend}
         >
-          <svg width="28" height="28" viewBox="0 0 20 20" fill="none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
             <path
-              d="M7 10l3-3m0 0l3 3m-3-3v6"
-              stroke="#a83232"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 3C12.2652 3 12.5196 3.10536 12.7071 3.29289L19.7071 10.2929C20.0976 10.6834 20.0976 11.3166 19.7071 11.7071C19.3166 12.0976 18.6834 12.0976 18.2929 11.7071L13 6.41421V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V6.41421L5.70711 11.7071C5.31658 12.0976 4.68342 12.0976 4.29289 11.7071C3.90237 11.3166 3.90237 10.6834 4.29289 10.2929L11.2929 3.29289C11.4804 3.10536 11.7348 3 12 3Z"
+              fill="#fff"
             />
           </svg>
         </button>
