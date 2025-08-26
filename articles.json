@@ -1,459 +1,63 @@
 [
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000562887-signing-up-for-reveel-as-an-international-user",
-    "title": "Signing Up for Reveel as an International User"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000582589-why-reveel-",
-    "title": "Why Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000558662-when-did-reveel-launch-",
-    "title": "When did Reveel launch?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541452-how-is-reveel-different-from-others-",
-    "title": "How is Reveel different from others?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000529049-how-to-sign-up-and-login-to-reveel",
-    "title": "How to sign up and login to Reveel"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000582590-what-s-new-in-reveel-",
-    "title": "What's new in Reveel?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000529044-what-is-reveel-",
     "title": "What is Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541617-what-location-do-you-service-",
-    "title": "What location do you service?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000550073-what-s-the-catch-why-reveel-is-free-",
-    "title": "What's the catch why Reveel is free?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000558662-when-did-reveel-launch-",
-    "title": "When did Reveel launch?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541452-how-is-reveel-different-from-others-",
-    "title": "How is Reveel different from others?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000582590-what-s-new-in-reveel-",
-    "title": "What's new in Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000529044-what-is-reveel-",
-    "title": "What is Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000582589-why-reveel-",
-    "title": "Why Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541617-what-location-do-you-service-",
-    "title": "What location do you service?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000550073-what-s-the-catch-why-reveel-is-free-",
-    "title": "What's the catch why Reveel is free?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000529049-how-to-sign-up-and-login-to-reveel",
-    "title": "How to sign up and login to Reveel"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000562887-signing-up-for-reveel-as-an-international-user",
     "title": "Signing Up for Reveel as an International User"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000599469-does-reveel-support-tv-casting-",
-    "title": "Does Reveel support TV casting?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000558662-when-did-reveel-launch-",
+    "title": "When did Reveel launch?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000536068-how-to-save-movies-on-favorites",
     "title": "How to save movies on Favorites"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000568206-can-you-tell-the-remaining-time-when-watching-a-film-",
-    "title": "Can you tell the remaining time when watching a film?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000562601-how-to-add-or-remove-films-from-the-my-list-",
+    "title": "How to add or remove films from the My List?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000549604-where-can-i-adjust-the-speed-",
     "title": "Where can I adjust the speed?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000562519-how-can-i-activate-subtitles-or-closed-captions-",
-    "title": "How can I activate subtitles or closed captions?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600058-how-do-i-find-out-when-new-content-is-added-to-reveel-",
-    "title": "How do I find out when new content is added to Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000567755-how-do-i-search-for-a-movie-",
-    "title": "How do I search for a movie?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000562601-how-to-add-or-remove-films-from-the-my-list-",
-    "title": "How to add or remove films from the My List?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600661-does-reveel-offer-subtitles-or-closed-captions-",
-    "title": "Does Reveel offer subtitles or closed captions?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000599467-where-can-i-find-movie-descriptions-on-reveel-",
-    "title": "Where can I find movie descriptions on Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000599469-does-reveel-support-tv-casting-",
-    "title": "Does Reveel support TV casting?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000549604-where-can-i-adjust-the-speed-",
-    "title": "Where can I adjust the speed?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000562519-how-can-i-activate-subtitles-or-closed-captions-",
-    "title": "How can I activate subtitles or closed captions?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000562601-how-to-add-or-remove-films-from-the-my-list-",
-    "title": "How to add or remove films from the My List?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000567755-how-do-i-search-for-a-movie-",
-    "title": "How do I search for a movie?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600058-how-do-i-find-out-when-new-content-is-added-to-reveel-",
-    "title": "How do I find out when new content is added to Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000599467-where-can-i-find-movie-descriptions-on-reveel-",
-    "title": "Where can I find movie descriptions on Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000536068-how-to-save-movies-on-favorites",
-    "title": "How to save movies on Favorites"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600661-does-reveel-offer-subtitles-or-closed-captions-",
-    "title": "Does Reveel offer subtitles or closed captions?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000568206-can-you-tell-the-remaining-time-when-watching-a-film-",
-    "title": "Can you tell the remaining time when watching a film?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000529048-what-are-the-supported-devices-that-can-stream-reveel-",
+    "title": "What are the supported devices that can stream Reveel?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000533260-what-devices-can-i-use-to-stream-reveel-",
     "title": "What devices can I use to stream Reveel?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000572645-does-it-work-on-apple-tv-",
-    "title": "Does it work on Apple TV?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000570325-can-i-install-reveel-on-my-iphone-7-",
-    "title": "Can I install Reveel on my iPhone 7?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000550071-is-reveel-compatible-with-fire-tablets-",
     "title": "Is Reveel compatible with Fire tablets?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000582656-how-to-access-reveel-in-apple-tv",
-    "title": "How to access Reveel in Apple TV"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000570322-is-reveel-app-available-on-desktop-",
-    "title": "Is Reveel app available on Desktop?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000569809-how-to-install-roku",
-    "title": "How to install Roku"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000570350-is-reveel-available-on-xbox-",
-    "title": "Is Reveel Available on Xbox?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000572643-i-have-xfinity-flex-box-is-there-an-app-or-something-to-download-",
-    "title": "I have Xfinity flex box is there an app or something to download?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000529048-what-are-the-supported-devices-that-can-stream-reveel-",
-    "title": "What are the supported devices that can stream Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000569809-how-to-install-roku",
-    "title": "How to install Roku"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000582656-how-to-access-reveel-in-apple-tv",
-    "title": "How to access Reveel in Apple TV"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000570350-is-reveel-available-on-xbox-",
-    "title": "Is Reveel Available on Xbox?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000572645-does-it-work-on-apple-tv-",
-    "title": "Does it work on Apple TV?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000570322-is-reveel-app-available-on-desktop-",
-    "title": "Is Reveel app available on Desktop?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000572643-i-have-xfinity-flex-box-is-there-an-app-or-something-to-download-",
-    "title": "I have Xfinity flex box is there an app or something to download?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000570325-can-i-install-reveel-on-my-iphone-7-",
-    "title": "Can I install Reveel on my iPhone 7?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000529048-what-are-the-supported-devices-that-can-stream-reveel-",
-    "title": "What are the supported devices that can stream Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000550071-is-reveel-compatible-with-fire-tablets-",
-    "title": "Is Reveel compatible with Fire tablets?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000533260-what-devices-can-i-use-to-stream-reveel-",
-    "title": "What devices can I use to stream Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000566734-how-do-i-change-the-quality-of-the-video-",
-    "title": "How do I change the quality of the video?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000536122-powercycle-your-modem-router",
     "title": "Powercycle your modem/router"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000553260-user-does-not-exist-with-this-email",
-    "title": "User does not exist with this email"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000553269-i-can-t-sign-in-to-reveel",
-    "title": "I can't sign in to Reveel"
+    "link": "https://help.reveel.net/support/solutions/articles/72000539958-app-crashes-while-watching-a-movie",
+    "title": "App crashes while watching a movie"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000539969-system-requirements-to-download-reveel-app",
     "title": "System requirements to download Reveel app"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000563187-i-am-having-trouble-downloading-the-app",
-    "title": "I am having trouble downloading the app"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565692-why-can-t-i-sign-in-with-my-email-address-and-password-",
-    "title": "Why can't I sign in with my email address and password?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000569636-why-is-it-buffering-and-pixelated-",
-    "title": "Why is it buffering and pixelated?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539958-app-crashes-while-watching-a-movie",
-    "title": "App crashes while watching a movie"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565693-what-is-your-suggested-secured-password-",
-    "title": "What is your suggested secured password?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000566734-how-do-i-change-the-quality-of-the-video-",
-    "title": "How do I change the quality of the video?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000553269-i-can-t-sign-in-to-reveel",
-    "title": "I can't sign in to Reveel"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000563187-i-am-having-trouble-downloading-the-app",
-    "title": "I am having trouble downloading the app"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565693-what-is-your-suggested-secured-password-",
-    "title": "What is your suggested secured password?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000569636-why-is-it-buffering-and-pixelated-",
-    "title": "Why is it buffering and pixelated?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539969-system-requirements-to-download-reveel-app",
-    "title": "System requirements to download Reveel app"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565692-why-can-t-i-sign-in-with-my-email-address-and-password-",
-    "title": "Why can't I sign in with my email address and password?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000536122-powercycle-your-modem-router",
-    "title": "Powercycle your modem/router"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000553260-user-does-not-exist-with-this-email",
-    "title": "User does not exist with this email"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539958-app-crashes-while-watching-a-movie",
-    "title": "App crashes while watching a movie"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634562-what-are-the-benefits-of-a-vip-subscription-on-top-of-premium-benefits-",
-    "title": "What are the benefits of a VIP subscription (on top of Premium benefits)?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000541446-do-i-have-to-pay-any-subscription-fee-",
     "title": "Do I have to pay any subscription fee?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634563-does-reveel-offer-a-free-trial-",
-    "title": "Does Reveel offer a free trial?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634558-do-i-need-to-create-an-account-to-subscribe-",
-    "title": "Do I need to create an account to subscribe?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634556-what-are-the-different-reveel-subscription-plans-",
-    "title": "What are the different Reveel subscription plans?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634559-what-happens-if-i-click-become-a-premium-member-after-subscribing-to-premium-",
-    "title": "What happens if I click \"Become a Premium Member\" after subscribing to Premium?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634561-what-are-the-benefits-of-a-premium-subscription-",
-    "title": "What are the benefits of a Premium subscription?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000542646-do-i-pay-for-a-subscription-",
-    "title": "Do I pay for a subscription?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634557-how-can-i-subscribe-to-reveel-",
-    "title": "How can I subscribe to Reveel?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000540001-do-you-offer-any-referral-program-",
     "title": "Do you offer any referral program?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634562-what-are-the-benefits-of-a-vip-subscription-on-top-of-premium-benefits-",
-    "title": "What are the benefits of a VIP subscription (on top of Premium benefits)?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634559-what-happens-if-i-click-become-a-premium-member-after-subscribing-to-premium-",
-    "title": "What happens if I click \"Become a Premium Member\" after subscribing to Premium?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634563-does-reveel-offer-a-free-trial-",
-    "title": "Does Reveel offer a free trial?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634558-do-i-need-to-create-an-account-to-subscribe-",
-    "title": "Do I need to create an account to subscribe?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000542646-do-i-pay-for-a-subscription-",
     "title": "Do I pay for a subscription?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541446-do-i-have-to-pay-any-subscription-fee-",
-    "title": "Do I have to pay any subscription fee?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634557-how-can-i-subscribe-to-reveel-",
-    "title": "How can I subscribe to Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634561-what-are-the-benefits-of-a-premium-subscription-",
-    "title": "What are the benefits of a Premium subscription?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634556-what-are-the-different-reveel-subscription-plans-",
-    "title": "What are the different Reveel subscription plans?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000540001-do-you-offer-any-referral-program-",
-    "title": "Do you offer any referral program?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000566708-how-can-i-zoom-in-the-view-on-my-iphone-",
-    "title": "How can I zoom in the view on my iPhone?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000563231-logging-out-of-your-reveel-account",
-    "title": "Logging out of your Reveel account"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539987-how-do-i-correct-my-name-on-the-account",
-    "title": "How do I correct my name on the account"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565686-does-reveel-offer-a-family-or-parental-account-",
-    "title": "Does Reveel offer a family or parental account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000524883-how-to-change-a-password",
-    "title": "How to change a password"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539986-i-want-to-change-my-email-address",
-    "title": "I want to change my email address"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600066-can-i-share-my-reveel-account-with-friends-or-family-members-",
-    "title": "Can I share my Reveel account with friends or family members?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539994-i-want-to-deactivate-my-account",
-    "title": "I want to deactivate my account"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565688-can-i-just-tell-you-my-desired-password-",
-    "title": "Can I just tell you my desired password?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000563185-how-to-reactivate-my-account-",
-    "title": "How to reactivate my account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000566708-how-can-i-zoom-in-the-view-on-my-iphone-",
-    "title": "How can I zoom in the view on my iPhone?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000563231-logging-out-of-your-reveel-account",
-    "title": "Logging out of your Reveel account"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000563185-how-to-reactivate-my-account-",
-    "title": "How to reactivate my account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000524883-how-to-change-a-password",
-    "title": "How to change a password"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539994-i-want-to-deactivate-my-account",
-    "title": "I want to deactivate my account"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565688-can-i-just-tell-you-my-desired-password-",
-    "title": "Can I just tell you my desired password?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000539986-i-want-to-change-my-email-address",
@@ -464,44 +68,20 @@
     "title": "How do I correct my name on the account"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565686-does-reveel-offer-a-family-or-parental-account-",
-    "title": "Does Reveel offer a family or parental account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600066-can-i-share-my-reveel-account-with-friends-or-family-members-",
-    "title": "Can I share my Reveel account with friends or family members?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000539994-i-want-to-deactivate-my-account",
+    "title": "I want to deactivate my account"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000562606-is-reveel-legal-",
     "title": "Is Reveel Legal?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000565690-why-am-i-receiving-newsletters-even-after-i-ve-deactivated-my-account-",
-    "title": "Why am I receiving newsletters even after I've deactivated my account?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000565689-what-is-reveel-s-privacy-policy-",
     "title": "What is Reveel's privacy policy?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623647-is-there-a-community-or-forum-where-users-can-share-their-experiences-and-recommendations-",
-    "title": "Is there a community or forum where users can share their experiences and recommendations?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000568793-how-can-i-give-my-feedback-on-a-film-",
-    "title": "How can I give my feedback on a film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623648-we-listen-and-improve-how-reveel-addresses-user-concerns",
-    "title": "We Listen and Improve: How Reveel Addresses User Concerns"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000572641-how-do-i-contact-reveel-customer-service-",
-    "title": "How do I contact Reveel Customer Service?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000568791-how-can-i-subscribe-to-newsletters",
-    "title": "How can I subscribe to newsletters"
+    "link": "https://help.reveel.net/support/solutions/articles/72000565690-why-am-i-receiving-newsletters-even-after-i-ve-deactivated-my-account-",
+    "title": "Why am I receiving newsletters even after I've deactivated my account?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000539985-how-to-contact-us",
@@ -512,40 +92,8 @@
     "title": "Does Reveel have a phone support I can call?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000599459-what-should-i-do-if-i-want-to-suggest-adding-more-movies-or-live-tv-on-the-app-",
-    "title": "What should I do if I want to suggest adding more movies or live TV on the app?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623647-is-there-a-community-or-forum-where-users-can-share-their-experiences-and-recommendations-",
-    "title": "Is there a community or forum where users can share their experiences and recommendations?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000572641-how-do-i-contact-reveel-customer-service-",
     "title": "How do I contact Reveel Customer Service?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000568793-how-can-i-give-my-feedback-on-a-film-",
-    "title": "How can I give my feedback on a film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623648-we-listen-and-improve-how-reveel-addresses-user-concerns",
-    "title": "We Listen and Improve: How Reveel Addresses User Concerns"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000599459-what-should-i-do-if-i-want-to-suggest-adding-more-movies-or-live-tv-on-the-app-",
-    "title": "What should I do if I want to suggest adding more movies or live TV on the app?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539985-how-to-contact-us",
-    "title": "How to contact us"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000568791-how-can-i-subscribe-to-newsletters",
-    "title": "How can I subscribe to newsletters"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000563186-does-reveel-have-a-phone-support-i-can-call-",
-    "title": "Does Reveel have a phone support I can call?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000569084-what-browser-can-i-use-to-watch-in-reveel-",
@@ -556,34 +104,6 @@
     "title": "Since it is free do I have to use data?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000643937-new-on-reveel",
-    "title": "New On Reveel"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623640-get-recommendations-you-ll-love-personalize-your-reveel-experience-",
-    "title": "Get Recommendations You'll Love: Personalize Your Reveel Experience!"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623641-what-upcoming-features-and-exclusive-content-can-i-look-forward-to-as-an-active-user-",
-    "title": "What upcoming features and exclusive content can I look forward to as an active user?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600037-what-kind-of-content-can-i-watch-on-reveel-",
-    "title": "What kind of content can I watch on Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623643-get-recommendations-you-ll-love-refine-your-reveel-preferences-",
-    "title": "Get Recommendations You'll Love: Refine Your Reveel Preferences!"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623643-get-recommendations-you-ll-love-refine-your-reveel-preferences-",
-    "title": "Get Recommendations You'll Love: Refine Your Reveel Preferences!"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623640-get-recommendations-you-ll-love-personalize-your-reveel-experience-",
-    "title": "Get Recommendations You'll Love: Personalize Your Reveel Experience!"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000623641-what-upcoming-features-and-exclusive-content-can-i-look-forward-to-as-an-active-user-",
     "title": "What upcoming features and exclusive content can I look forward to as an active user?"
   },
@@ -592,8 +112,8 @@
     "title": "New On Reveel"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600037-what-kind-of-content-can-i-watch-on-reveel-",
-    "title": "What kind of content can I watch on Reveel?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000623640-get-recommendations-you-ll-love-personalize-your-reveel-experience-",
+    "title": "Get Recommendations You'll Love: Personalize Your Reveel Experience!"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000535951-how-can-i-apply-as-an-advertiser-",
@@ -604,44 +124,8 @@
     "title": "Do I need to subscribe to Reveel to watch films online?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634627-can-i-expect-any-changes-to-the-simultaneous-playback-limits-in-the-future-",
-    "title": "Can I expect any changes to the simultaneous playback limits in the future?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634633-will-the-simultaneous-playback-limit-apply-to-app-sessions-",
-    "title": "Will the simultaneous playback limit apply to app sessions?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000634606-what-is-simultaneous-playback-",
     "title": "What is simultaneous playback?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634623-is-there-a-limit-to-the-number-of-devices-i-can-log-into-with-my-reveel-account-",
-    "title": "Is there a limit to the number of devices I can log into with my Reveel account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634607-how-does-simultaneous-playback-work-on-the-free-tier-",
-    "title": "How does simultaneous playback work on the free tier?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634610-do-i-actually-need-to-log-out-from-another-device-to-continue-watching-",
-    "title": "Do I actually need to log out from another device to continue watching?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634609-how-does-simultaneous-playback-work-on-premium-and-vip-tiers-",
-    "title": "How does simultaneous playback work on Premium and VIP tiers?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634624-will-the-simultaneous-playback-limit-be-enforced-on-the-backend-",
-    "title": "Will the simultaneous playback limit be enforced on the backend?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634627-can-i-expect-any-changes-to-the-simultaneous-playback-limits-in-the-future-",
-    "title": "Can I expect any changes to the simultaneous playback limits in the future?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634633-will-the-simultaneous-playback-limit-apply-to-app-sessions-",
-    "title": "Will the simultaneous playback limit apply to app sessions?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000634607-how-does-simultaneous-playback-work-on-the-free-tier-",
@@ -652,92 +136,16 @@
     "title": "How does simultaneous playback work on Premium and VIP tiers?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634624-will-the-simultaneous-playback-limit-be-enforced-on-the-backend-",
-    "title": "Will the simultaneous playback limit be enforced on the backend?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634606-what-is-simultaneous-playback-",
-    "title": "What is simultaneous playback?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634623-is-there-a-limit-to-the-number-of-devices-i-can-log-into-with-my-reveel-account-",
-    "title": "Is there a limit to the number of devices I can log into with my Reveel account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634610-do-i-actually-need-to-log-out-from-another-device-to-continue-watching-",
-    "title": "Do I actually need to log out from another device to continue watching?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000626670-wait-my-watch-account-is-going-to-be-my-filmmaker-account-",
-    "title": "Wait, my watch account is going to be my filmmaker account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629502-sign-up-via-google",
-    "title": "Sign up via Google"
+    "link": "https://help.reveel.net/support/solutions/articles/72000631156-what-is-the-filmmaker-portal-",
+    "title": "What is the Filmmaker Portal?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000629492-filmmakers-account-creation",
     "title": "Filmmakers Account Creation"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000631156-what-is-the-filmmaker-portal-",
-    "title": "What is the Filmmaker Portal?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629491-sign-up-via-facebook",
-    "title": "Sign Up via Facebook"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635258-2-ways-to-access-filmmaker-portal",
-    "title": "2 ways to access Filmmaker Portal"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000643776-if-i-sign-up-at-films-reveel-net-do-i-also-get-a-regular-reveel-net-account-",
-    "title": "If I sign up at films.reveel.net, do I also get a regular Reveel.net account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629503-sign-up-via-apple",
-    "title": "Sign up via Apple"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000631231-don-t-have-a-reveel-account-but-want-a-filmmaker-account-",
     "title": "Don't have a Reveel account but want a filmmaker account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000626670-wait-my-watch-account-is-going-to-be-my-filmmaker-account-",
-    "title": "Wait, my watch account is going to be my filmmaker account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000643776-if-i-sign-up-at-films-reveel-net-do-i-also-get-a-regular-reveel-net-account-",
-    "title": "If I sign up at films.reveel.net, do I also get a regular Reveel.net account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629492-filmmakers-account-creation",
-    "title": "Filmmakers Account Creation"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629503-sign-up-via-apple",
-    "title": "Sign up via Apple"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000631156-what-is-the-filmmaker-portal-",
-    "title": "What is the Filmmaker Portal?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629502-sign-up-via-google",
-    "title": "Sign up via Google"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000631231-don-t-have-a-reveel-account-but-want-a-filmmaker-account-",
-    "title": "Don't have a Reveel account but want a filmmaker account?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635258-2-ways-to-access-filmmaker-portal",
-    "title": "2 ways to access Filmmaker Portal"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629491-sign-up-via-facebook",
-    "title": "Sign Up via Facebook"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000631228-what-s-the-preferred-format-when-uploading-films-",
@@ -748,136 +156,28 @@
     "title": "My film didn't have subtitles (SRT file) when it was published on Reveel, will this affect how much I earn in the future?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635105-is-there-a-spot-to-submit-the-overall-series-",
-    "title": "Is there a spot to submit the overall series?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600055-what-is-reveel-s-policy-on-mature-or-adult-content-",
-    "title": "What is Reveel's policy on mature or adult content?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635167-what-is-the-film-submission-and-approval-process-",
-    "title": "What is the Film Submission and Approval Process?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000539992-i-am-a-filmmaker-where-do-i-submit-my-film-",
+    "title": "I am a filmmaker. Where do I submit my film?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000541449-is-there-a-limit-for-the-number-of-films-submission-",
     "title": "Is there a limit for the number of films submission?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539992-i-am-a-filmmaker-where-do-i-submit-my-film-",
-    "title": "I am a filmmaker. Where do I submit my film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000624776-do-i-need-to-upload-each-film-i-want-to-submit-",
-    "title": "Do I need to upload each film I want to submit?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000615717-how-can-we-submit-content-for-distribution-with-your-network-",
     "title": "How can we submit content for distribution with your network?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000645561-can-i-include-laurels-film-festival-selections-awards-on-my-film-s-thumbnail-image-",
-    "title": "Can I include laurels (film festival selections/awards) on my film's thumbnail image?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000645560-i-accidentally-submitted-my-feature-film-as-a-short-film-can-i-change-its-category-",
-    "title": "I accidentally submitted my feature film as a short film. Can I change its category?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000624206-do-you-have-a-standard-list-of-genres-",
-    "title": "Do you have a standard list of genres?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635105-is-there-a-spot-to-submit-the-overall-series-",
-    "title": "Is there a spot to submit the overall series?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000624206-do-you-have-a-standard-list-of-genres-",
-    "title": "Do you have a standard list of genres?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000645560-i-accidentally-submitted-my-feature-film-as-a-short-film-can-i-change-its-category-",
-    "title": "I accidentally submitted my feature film as a short film. Can I change its category?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000600055-what-is-reveel-s-policy-on-mature-or-adult-content-",
-    "title": "What is Reveel's policy on mature or adult content?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635167-what-is-the-film-submission-and-approval-process-",
-    "title": "What is the Film Submission and Approval Process?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000645561-can-i-include-laurels-film-festival-selections-awards-on-my-film-s-thumbnail-image-",
-    "title": "Can I include laurels (film festival selections/awards) on my film's thumbnail image?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541449-is-there-a-limit-for-the-number-of-films-submission-",
-    "title": "Is there a limit for the number of films submission?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000624776-do-i-need-to-upload-each-film-i-want-to-submit-",
-    "title": "Do I need to upload each film I want to submit?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000615717-how-can-we-submit-content-for-distribution-with-your-network-",
-    "title": "How can we submit content for distribution with your network?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000539992-i-am-a-filmmaker-where-do-i-submit-my-film-",
-    "title": "I am a filmmaker. Where do I submit my film?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000644507-i-have-a-series-how-should-i-submit-it-",
     "title": "I have a series. How should I submit it?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000644514-what-s-the-initial-submission-process-for-a-series-compared-to-a-film-",
-    "title": "What's the initial submission process for a series compared to a film?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000644508-i-submitted-one-video-that-contains-multiple-episodes-of-my-series-is-that-okay-",
     "title": "I submitted one video that contains multiple episodes of my series. Is that okay?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000644638-so-to-confirm-for-a-series-i-need-to-upload-each-episode-individually-",
-    "title": "So, to confirm, for a series, I need to upload each episode individually?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000644638-so-to-confirm-for-a-series-i-need-to-upload-each-episode-individually-",
-    "title": "So, to confirm, for a series, I need to upload each episode individually?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000644507-i-have-a-series-how-should-i-submit-it-",
-    "title": "I have a series. How should I submit it?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000644514-what-s-the-initial-submission-process-for-a-series-compared-to-a-film-",
     "title": "What's the initial submission process for a series compared to a film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000644508-i-submitted-one-video-that-contains-multiple-episodes-of-my-series-is-that-okay-",
-    "title": "I submitted one video that contains multiple episodes of my series. Is that okay?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000631689-i-have-a-typo-error-on-the-description-of-my-film",
-    "title": "I have a typo error on the description of my film"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000631227-my-video-uploaded-to-reveel-has-audio-but-it-is-not-showing",
-    "title": "My video uploaded to Reveel has audio but it is not showing"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000634205-there-are-no-ads-during-playback-do-i-still-earn-0-20-per-hour-if-there-are-no-ads-shown-",
-    "title": "There are no ads during playback. Do I still earn $0.20 per hour if there are no ads shown?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630697-is-there-a-deadline-to-reach-the-minimum-payout-threshold-",
-    "title": "Is there a deadline to reach the minimum payout threshold?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000625064-i-m-having-trouble-uploading-my-film-assets-what-should-i-do-",
-    "title": "I'm having trouble uploading my film assets. What should I do?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000630697-is-there-a-deadline-to-reach-the-minimum-payout-threshold-",
@@ -886,14 +186,6 @@
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000634205-there-are-no-ads-during-playback-do-i-still-earn-0-20-per-hour-if-there-are-no-ads-shown-",
     "title": "There are no ads during playback. Do I still earn $0.20 per hour if there are no ads shown?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000631689-i-have-a-typo-error-on-the-description-of-my-film",
-    "title": "I have a typo error on the description of my film"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000625064-i-m-having-trouble-uploading-my-film-assets-what-should-i-do-",
-    "title": "I'm having trouble uploading my film assets. What should I do?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000631227-my-video-uploaded-to-reveel-has-audio-but-it-is-not-showing",
@@ -904,220 +196,28 @@
     "title": "I have questions regarding my login email"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630562-how-much-is-the-transaction-fee-for-wire-transfers-",
-    "title": "How much is the transaction fee for wire transfers?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630566-are-there-any-transaction-fees-for-paypal-payments-",
-    "title": "Are there any transaction fees for PayPal payments?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000630543-what-are-the-different-payment-methods-offered-by-reveel-",
     "title": "What are the different payment methods offered by Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630567-in-what-currency-will-i-be-paid-",
-    "title": "In what currency will I be paid?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630573-will-i-receive-the-full-amount-i-earned-if-i-choose-to-be-paid-in-my-local-currency-",
-    "title": "Will I receive the full amount I earned if I choose to be paid in my local currency?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000630544-are-there-any-fees-associated-with-different-payment-methods-",
     "title": "Are there any fees associated with different payment methods?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630561-how-much-is-the-transaction-fee-for-ach-payments-",
-    "title": "How much is the transaction fee for ACH payments?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000630547-who-is-responsible-for-paying-the-transaction-fees-",
     "title": "Who is responsible for paying the transaction fees?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630549-what-is-ach-automated-clearing-house-",
-    "title": "What is ACH (Automated Clearing House)?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630553-what-is-a-wire-transfer-",
-    "title": "What is a wire transfer?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630562-how-much-is-the-transaction-fee-for-wire-transfers-",
-    "title": "How much is the transaction fee for wire transfers?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630566-are-there-any-transaction-fees-for-paypal-payments-",
-    "title": "Are there any transaction fees for PayPal payments?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630543-what-are-the-different-payment-methods-offered-by-reveel-",
-    "title": "What are the different payment methods offered by Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630567-in-what-currency-will-i-be-paid-",
-    "title": "In what currency will I be paid?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630573-will-i-receive-the-full-amount-i-earned-if-i-choose-to-be-paid-in-my-local-currency-",
-    "title": "Will I receive the full amount I earned if I choose to be paid in my local currency?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630553-what-is-a-wire-transfer-",
-    "title": "What is a wire transfer?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630549-what-is-ach-automated-clearing-house-",
-    "title": "What is ACH (Automated Clearing House)?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630544-are-there-any-fees-associated-with-different-payment-methods-",
-    "title": "Are there any fees associated with different payment methods?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630561-how-much-is-the-transaction-fee-for-ach-payments-",
-    "title": "How much is the transaction fee for ACH payments?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630547-who-is-responsible-for-paying-the-transaction-fees-",
-    "title": "Who is responsible for paying the transaction fees?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630568-can-i-choose-to-be-paid-in-my-local-currency-",
-    "title": "Can I choose to be paid in my local currency?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630569-what-are-fx-foreign-currency-fees-for-international-filmmakers-",
-    "title": "What are FX (Foreign Currency) fees for international filmmakers?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630565-what-is-the-transaction-fee-for-international-e-checks-",
-    "title": "What is the transaction fee for international e-checks?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000630594-am-i-responsible-for-paying-taxes-on-the-money-i-earn-from-reveel-",
     "title": "Am I responsible for paying taxes on the money I earn from Reveel?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630572-how-much-are-the-fx-foreign-currency-fees-",
-    "title": "How much are the FX (Foreign Currency) fees?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630570-who-is-responsible-for-paying-the-fx-foreign-currency-fees-fees-",
-    "title": "Who is responsible for paying the FX (Foreign Currency) fees  fees?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630555-what-is-an-international-e-check-",
-    "title": "What is an international e-check?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000630610-does-reveel-provide-any-tax-documents-",
     "title": "Does Reveel provide any tax documents?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630564-how-much-does-an-international-wire-transfer-cost-",
-    "title": "How much does an international wire transfer cost?"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000630611-what-should-i-do-if-i-need-help-with-filing-taxes-on-my-earnings-from-reveel-",
     "title": "What should I do if I need help with filing taxes on my earnings from Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630569-what-are-fx-foreign-currency-fees-for-international-filmmakers-",
-    "title": "What are FX (Foreign Currency) fees for international filmmakers?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630568-can-i-choose-to-be-paid-in-my-local-currency-",
-    "title": "Can I choose to be paid in my local currency?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630572-how-much-are-the-fx-foreign-currency-fees-",
-    "title": "How much are the FX (Foreign Currency) fees?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630570-who-is-responsible-for-paying-the-fx-foreign-currency-fees-fees-",
-    "title": "Who is responsible for paying the FX (Foreign Currency) fees  fees?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630594-am-i-responsible-for-paying-taxes-on-the-money-i-earn-from-reveel-",
-    "title": "Am I responsible for paying taxes on the money I earn from Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630564-how-much-does-an-international-wire-transfer-cost-",
-    "title": "How much does an international wire transfer cost?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630565-what-is-the-transaction-fee-for-international-e-checks-",
-    "title": "What is the transaction fee for international e-checks?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630611-what-should-i-do-if-i-need-help-with-filing-taxes-on-my-earnings-from-reveel-",
-    "title": "What should I do if I need help with filing taxes on my earnings from Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630610-does-reveel-provide-any-tax-documents-",
-    "title": "Does Reveel provide any tax documents?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000630555-what-is-an-international-e-check-",
-    "title": "What is an international e-check?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623867-can-i-resubmit-my-film-after-addressing-the-issues-mentioned-in-the-declination-notice-",
-    "title": "Can I resubmit my film after addressing the issues mentioned in the declination notice?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000637857-how-can-i-edit-a-rejected-submission-s-title-",
-    "title": "How can I edit a rejected submission's title?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541451-what-is-the-process-after-i-submitted-my-film-",
-    "title": "What is the process after I submitted my film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541448-how-do-i-know-my-film-has-been-accepted-",
-    "title": "How do I know my film has been accepted?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000642982-common-film-rejection-reasons",
-    "title": "Common Film Rejection Reasons"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623847-why-was-my-film-declined-",
-    "title": "Why was my film declined?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623848-will-i-receive-specific-feedback-on-my-rejected-film-",
-    "title": "Will I receive specific feedback on my rejected film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623810-how-long-does-it-take-to-receive-feedback-after-film-submission-",
-    "title": "How long does it take to receive feedback after film submission?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000637857-how-can-i-edit-a-rejected-submission-s-title-",
-    "title": "How can I edit a rejected submission's title?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623867-can-i-resubmit-my-film-after-addressing-the-issues-mentioned-in-the-declination-notice-",
-    "title": "Can I resubmit my film after addressing the issues mentioned in the declination notice?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623848-will-i-receive-specific-feedback-on-my-rejected-film-",
-    "title": "Will I receive specific feedback on my rejected film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623847-why-was-my-film-declined-",
-    "title": "Why was my film declined?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000541448-how-do-i-know-my-film-has-been-accepted-",
-    "title": "How do I know my film has been accepted?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623810-how-long-does-it-take-to-receive-feedback-after-film-submission-",
-    "title": "How long does it take to receive feedback after film submission?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000642982-common-film-rejection-reasons",
@@ -1128,8 +228,8 @@
     "title": "What is the process after I submitted my film?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000629589-portal-navigation",
-    "title": "Portal Navigation"
+    "link": "https://help.reveel.net/support/solutions/articles/72000541448-how-do-i-know-my-film-has-been-accepted-",
+    "title": "How do I know my film has been accepted?"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000642600-where-and-how-do-i-start-uploading-films-",
@@ -1140,6 +240,398 @@
     "title": "Sidebar Controls"
   },
   {
+    "link": "https://help.reveel.net/support/solutions/articles/72000629589-portal-navigation",
+    "title": "Portal Navigation"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635487-do-i-always-have-to-upload-thumbnails-and-srt-even-for-shorts-",
+    "title": "Do I always have to upload thumbnails and SRT even for shorts?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635491-why-are-thumbnails-and-srt-files-required-",
+    "title": "Why are thumbnails and SRT files required?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635493-what-happens-if-i-don-t-upload-a-thumbnail-or-srt-file-",
+    "title": "What happens if I don't upload a thumbnail or SRT file?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000642859-getting-your-film-featured-on-reveel",
+    "title": "Getting Your Film Featured on Reveel"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000642956-how-do-i-know-my-films-are-live-",
+    "title": "How do I know my films are live?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000643046-can-i-see-how-many-people-have-watched-my-short-film-on-reveel-",
+    "title": "Can I see how many people have watched my short film on Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000582590-what-s-new-in-reveel-",
+    "title": "What's new in Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000582589-why-reveel-",
+    "title": "Why Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000541452-how-is-reveel-different-from-others-",
+    "title": "How is Reveel different from others?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000529049-how-to-sign-up-and-login-to-reveel",
+    "title": "How to sign up and login to Reveel"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000541617-what-location-do-you-service-",
+    "title": "What location do you service?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000550073-what-s-the-catch-why-reveel-is-free-",
+    "title": "What's the catch why Reveel is free?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000562519-how-can-i-activate-subtitles-or-closed-captions-",
+    "title": "How can I activate subtitles or closed captions?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600661-does-reveel-offer-subtitles-or-closed-captions-",
+    "title": "Does Reveel offer subtitles or closed captions?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000567755-how-do-i-search-for-a-movie-",
+    "title": "How do I search for a movie?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000568206-can-you-tell-the-remaining-time-when-watching-a-film-",
+    "title": "Can you tell the remaining time when watching a film?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000599467-where-can-i-find-movie-descriptions-on-reveel-",
+    "title": "Where can I find movie descriptions on Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000599469-does-reveel-support-tv-casting-",
+    "title": "Does Reveel support TV casting?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600058-how-do-i-find-out-when-new-content-is-added-to-reveel-",
+    "title": "How do I find out when new content is added to Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000570350-is-reveel-available-on-xbox-",
+    "title": "Is Reveel Available on Xbox?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000572645-does-it-work-on-apple-tv-",
+    "title": "Does it work on Apple TV?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000582656-how-to-access-reveel-in-apple-tv",
+    "title": "How to access Reveel in Apple TV"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000570325-can-i-install-reveel-on-my-iphone-7-",
+    "title": "Can I install Reveel on my iPhone 7?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000570322-is-reveel-app-available-on-desktop-",
+    "title": "Is Reveel app available on Desktop?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000569809-how-to-install-roku",
+    "title": "How to install Roku"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000572643-i-have-xfinity-flex-box-is-there-an-app-or-something-to-download-",
+    "title": "I have Xfinity flex box is there an app or something to download?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000553260-user-does-not-exist-with-this-email",
+    "title": "User does not exist with this email"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000553269-i-can-t-sign-in-to-reveel",
+    "title": "I can't sign in to Reveel"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000563187-i-am-having-trouble-downloading-the-app",
+    "title": "I am having trouble downloading the app"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000565692-why-can-t-i-sign-in-with-my-email-address-and-password-",
+    "title": "Why can't I sign in with my email address and password?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000565693-what-is-your-suggested-secured-password-",
+    "title": "What is your suggested secured password?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000566734-how-do-i-change-the-quality-of-the-video-",
+    "title": "How do I change the quality of the video?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000569636-why-is-it-buffering-and-pixelated-",
+    "title": "Why is it buffering and pixelated?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634556-what-are-the-different-reveel-subscription-plans-",
+    "title": "What are the different Reveel subscription plans?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634557-how-can-i-subscribe-to-reveel-",
+    "title": "How can I subscribe to Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634558-do-i-need-to-create-an-account-to-subscribe-",
+    "title": "Do I need to create an account to subscribe?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634559-what-happens-if-i-click-become-a-premium-member-after-subscribing-to-premium-",
+    "title": "What happens if I click \"Become a Premium Member\" after subscribing to Premium?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634561-what-are-the-benefits-of-a-premium-subscription-",
+    "title": "What are the benefits of a Premium subscription?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634562-what-are-the-benefits-of-a-vip-subscription-on-top-of-premium-benefits-",
+    "title": "What are the benefits of a VIP subscription (on top of Premium benefits)?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634563-does-reveel-offer-a-free-trial-",
+    "title": "Does Reveel offer a free trial?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000563185-how-to-reactivate-my-account-",
+    "title": "How to reactivate my account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000524883-how-to-change-a-password",
+    "title": "How to change a password"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000563231-logging-out-of-your-reveel-account",
+    "title": "Logging out of your Reveel account"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000565686-does-reveel-offer-a-family-or-parental-account-",
+    "title": "Does Reveel offer a family or parental account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000565688-can-i-just-tell-you-my-desired-password-",
+    "title": "Can I just tell you my desired password?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000566708-how-can-i-zoom-in-the-view-on-my-iphone-",
+    "title": "How can I zoom in the view on my iPhone?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600066-can-i-share-my-reveel-account-with-friends-or-family-members-",
+    "title": "Can I share my Reveel account with friends or family members?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000568791-how-can-i-subscribe-to-newsletters",
+    "title": "How can I subscribe to newsletters"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000568793-how-can-i-give-my-feedback-on-a-film-",
+    "title": "How can I give my feedback on a film?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000599459-what-should-i-do-if-i-want-to-suggest-adding-more-movies-or-live-tv-on-the-app-",
+    "title": "What should I do if I want to suggest adding more movies or live TV on the app?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623647-is-there-a-community-or-forum-where-users-can-share-their-experiences-and-recommendations-",
+    "title": "Is there a community or forum where users can share their experiences and recommendations?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623648-we-listen-and-improve-how-reveel-addresses-user-concerns",
+    "title": "We Listen and Improve: How Reveel Addresses User Concerns"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623643-get-recommendations-you-ll-love-refine-your-reveel-preferences-",
+    "title": "Get Recommendations You'll Love: Refine Your Reveel Preferences!"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600037-what-kind-of-content-can-i-watch-on-reveel-",
+    "title": "What kind of content can I watch on Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634610-do-i-actually-need-to-log-out-from-another-device-to-continue-watching-",
+    "title": "Do I actually need to log out from another device to continue watching?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634623-is-there-a-limit-to-the-number-of-devices-i-can-log-into-with-my-reveel-account-",
+    "title": "Is there a limit to the number of devices I can log into with my Reveel account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634624-will-the-simultaneous-playback-limit-be-enforced-on-the-backend-",
+    "title": "Will the simultaneous playback limit be enforced on the backend?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634627-can-i-expect-any-changes-to-the-simultaneous-playback-limits-in-the-future-",
+    "title": "Can I expect any changes to the simultaneous playback limits in the future?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634633-will-the-simultaneous-playback-limit-apply-to-app-sessions-",
+    "title": "Will the simultaneous playback limit apply to app sessions?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635258-2-ways-to-access-filmmaker-portal",
+    "title": "2 ways to access Filmmaker Portal"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000629491-sign-up-via-facebook",
+    "title": "Sign Up via Facebook"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000629502-sign-up-via-google",
+    "title": "Sign up via Google"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000629503-sign-up-via-apple",
+    "title": "Sign up via Apple"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000626670-wait-my-watch-account-is-going-to-be-my-filmmaker-account-",
+    "title": "Wait, my watch account is going to be my filmmaker account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000643776-if-i-sign-up-at-films-reveel-net-do-i-also-get-a-regular-reveel-net-account-",
+    "title": "If I sign up at films.reveel.net, do I also get a regular Reveel.net account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000624206-do-you-have-a-standard-list-of-genres-",
+    "title": "Do you have a standard list of genres?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000624776-do-i-need-to-upload-each-film-i-want-to-submit-",
+    "title": "Do I need to upload each film I want to submit?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635167-what-is-the-film-submission-and-approval-process-",
+    "title": "What is the Film Submission and Approval Process?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635105-is-there-a-spot-to-submit-the-overall-series-",
+    "title": "Is there a spot to submit the overall series?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600055-what-is-reveel-s-policy-on-mature-or-adult-content-",
+    "title": "What is Reveel's policy on mature or adult content?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000645560-i-accidentally-submitted-my-feature-film-as-a-short-film-can-i-change-its-category-",
+    "title": "I accidentally submitted my feature film as a short film. Can I change its category?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000645561-can-i-include-laurels-film-festival-selections-awards-on-my-film-s-thumbnail-image-",
+    "title": "Can I include laurels (film festival selections/awards) on my film's thumbnail image?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000644638-so-to-confirm-for-a-series-i-need-to-upload-each-episode-individually-",
+    "title": "So, to confirm, for a series, I need to upload each episode individually?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000631689-i-have-a-typo-error-on-the-description-of-my-film",
+    "title": "I have a typo error on the description of my film"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000625064-i-m-having-trouble-uploading-my-film-assets-what-should-i-do-",
+    "title": "I'm having trouble uploading my film assets. What should I do?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630549-what-is-ach-automated-clearing-house-",
+    "title": "What is ACH (Automated Clearing House)?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630553-what-is-a-wire-transfer-",
+    "title": "What is a wire transfer?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630561-how-much-is-the-transaction-fee-for-ach-payments-",
+    "title": "How much is the transaction fee for ACH payments?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630562-how-much-is-the-transaction-fee-for-wire-transfers-",
+    "title": "How much is the transaction fee for wire transfers?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630566-are-there-any-transaction-fees-for-paypal-payments-",
+    "title": "Are there any transaction fees for PayPal payments?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630567-in-what-currency-will-i-be-paid-",
+    "title": "In what currency will I be paid?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630573-will-i-receive-the-full-amount-i-earned-if-i-choose-to-be-paid-in-my-local-currency-",
+    "title": "Will I receive the full amount I earned if I choose to be paid in my local currency?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630555-what-is-an-international-e-check-",
+    "title": "What is an international e-check?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630564-how-much-does-an-international-wire-transfer-cost-",
+    "title": "How much does an international wire transfer cost?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630565-what-is-the-transaction-fee-for-international-e-checks-",
+    "title": "What is the transaction fee for international e-checks?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630568-can-i-choose-to-be-paid-in-my-local-currency-",
+    "title": "Can I choose to be paid in my local currency?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630569-what-are-fx-foreign-currency-fees-for-international-filmmakers-",
+    "title": "What are FX (Foreign Currency) fees for international filmmakers?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630570-who-is-responsible-for-paying-the-fx-foreign-currency-fees-fees-",
+    "title": "Who is responsible for paying the FX (Foreign Currency) fees  fees?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630572-how-much-are-the-fx-foreign-currency-fees-",
+    "title": "How much are the FX (Foreign Currency) fees?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623810-how-long-does-it-take-to-receive-feedback-after-film-submission-",
+    "title": "How long does it take to receive feedback after film submission?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623847-why-was-my-film-declined-",
+    "title": "Why was my film declined?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623848-will-i-receive-specific-feedback-on-my-rejected-film-",
+    "title": "Will I receive specific feedback on my rejected film?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623867-can-i-resubmit-my-film-after-addressing-the-issues-mentioned-in-the-declination-notice-",
+    "title": "Can I resubmit my film after addressing the issues mentioned in the declination notice?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000637857-how-can-i-edit-a-rejected-submission-s-title-",
+    "title": "How can I edit a rejected submission's title?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623923-what-should-be-the-correct-size-for-thumbnails-when-submitting-films-",
+    "title": "What should be the correct size for thumbnails when submitting films?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623924-how-can-i-avoid-the-issue-of-missing-srt-files-when-submitting-my-film-",
+    "title": "How can I avoid the issue of missing SRT files when submitting my film?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623927-are-there-specific-requirements-for-episode-guides-when-submitting-a-web-series-",
+    "title": "Are there specific requirements for episode guides when submitting a web series?"
+  },
+  {
     "link": "https://help.reveel.net/support/solutions/articles/72000623928-what-happens-if-i-submit-a-film-with-an-incorrect-thumbnail-size-",
     "title": "What happens if I submit a film with an incorrect thumbnail size?"
   },
@@ -1156,115 +648,355 @@
     "title": "What is the importance of providing an episode guide for a web series?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623927-are-there-specific-requirements-for-episode-guides-when-submitting-a-web-series-",
-    "title": "Are there specific requirements for episode guides when submitting a web series?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635493-what-happens-if-i-don-t-upload-a-thumbnail-or-srt-file-",
-    "title": "What happens if I don't upload a thumbnail or SRT file?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635487-do-i-always-have-to-upload-thumbnails-and-srt-even-for-shorts-",
-    "title": "Do I always have to upload thumbnails and SRT even for shorts?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623924-how-can-i-avoid-the-issue-of-missing-srt-files-when-submitting-my-film-",
-    "title": "How can I avoid the issue of missing SRT files when submitting my film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635491-why-are-thumbnails-and-srt-files-required-",
-    "title": "Why are thumbnails and SRT files required?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623923-what-should-be-the-correct-size-for-thumbnails-when-submitting-films-",
-    "title": "What should be the correct size for thumbnails when submitting films?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623928-what-happens-if-i-submit-a-film-with-an-incorrect-thumbnail-size-",
-    "title": "What happens if I submit a film with an incorrect thumbnail size?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623932-can-i-resubmit-a-film-with-missing-srt-files-after-the-initial-submission-",
-    "title": "Can I resubmit a film with missing SRT files after the initial submission?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623927-are-there-specific-requirements-for-episode-guides-when-submitting-a-web-series-",
-    "title": "Are there specific requirements for episode guides when submitting a web series?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635491-why-are-thumbnails-and-srt-files-required-",
-    "title": "Why are thumbnails and SRT files required?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635487-do-i-always-have-to-upload-thumbnails-and-srt-even-for-shorts-",
-    "title": "Do I always have to upload thumbnails and SRT even for shorts?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623923-what-should-be-the-correct-size-for-thumbnails-when-submitting-films-",
-    "title": "What should be the correct size for thumbnails when submitting films?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623934-what-is-the-importance-of-providing-an-episode-guide-for-a-web-series-",
-    "title": "What is the importance of providing an episode guide for a web series?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000635493-what-happens-if-i-don-t-upload-a-thumbnail-or-srt-file-",
-    "title": "What happens if I don't upload a thumbnail or SRT file?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623924-how-can-i-avoid-the-issue-of-missing-srt-files-when-submitting-my-film-",
-    "title": "How can I avoid the issue of missing SRT files when submitting my film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000623933-how-can-i-verify-the-correct-thumbnail-size-for-my-film-",
-    "title": "How can I verify the correct thumbnail size for my film?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000642956-how-do-i-know-my-films-are-live-",
-    "title": "How do I know my films are live?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000626647-my-film-has-been-on-reveel-for-a-while-but-it-hasn-t-been-featured-why-not-",
-    "title": "My film has been on Reveel for a while, but it hasn't been featured. Why not?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000594677-promotional-opportunities-for-your-film-on-reveel",
+    "title": "Promotional Opportunities for Your Film on Reveel"
   },
   {
     "link": "https://help.reveel.net/support/solutions/articles/72000626636-why-did-another-filmmaker-get-a-special-launch-on-reveel-but-i-didn-t-",
     "title": "Why did another filmmaker get a special launch on Reveel, but I didn't?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000642859-getting-your-film-featured-on-reveel",
-    "title": "Getting Your Film Featured on Reveel"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000643046-can-i-see-how-many-people-have-watched-my-short-film-on-reveel-",
-    "title": "Can I see how many people have watched my short film on Reveel?"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000594677-promotional-opportunities-for-your-film-on-reveel",
-    "title": "Promotional Opportunities for Your Film on Reveel"
-  },
-  {
-    "link": "https://help.reveel.net/support/solutions/articles/72000642859-getting-your-film-featured-on-reveel",
-    "title": "Getting Your Film Featured on Reveel"
-  },
-  {
     "link": "https://help.reveel.net/support/solutions/articles/72000626647-my-film-has-been-on-reveel-for-a-while-but-it-hasn-t-been-featured-why-not-",
     "title": "My film has been on Reveel for a while, but it hasn't been featured. Why not?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000594677-promotional-opportunities-for-your-film-on-reveel",
-    "title": "Promotional Opportunities for Your Film on Reveel"
+    "link": "https://help.reveel.net/support/solutions/articles/72000582588-what-is-a-film-playlist-",
+    "title": "What is a film playlist?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000642956-how-do-i-know-my-films-are-live-",
-    "title": "How do I know my films are live?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000542779-i-forgot-my-password",
+    "title": "I forgot my password"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000643046-can-i-see-how-many-people-have-watched-my-short-film-on-reveel-",
-    "title": "Can I see how many people have watched my short film on Reveel?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000549906-how-to-deactivate-my-account-in-reveel-",
+    "title": "How to deactivate my account in Reveel?"
   },
   {
-    "link": "https://help.reveel.net/support/solutions/articles/72000626636-why-did-another-filmmaker-get-a-special-launch-on-reveel-but-i-didn-t-",
-    "title": "Why did another filmmaker get a special launch on Reveel, but I didn't?"
+    "link": "https://help.reveel.net/support/solutions/articles/72000549922-how-can-i-secure-my-account-",
+    "title": "How can I secure my account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000549628-can-i-have-multiple-accounts-",
+    "title": "Can I have multiple accounts?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000564532-can-i-sign-up-with-multiple-emails-",
+    "title": "Can I sign up with multiple emails?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000562602-how-can-i-change-my-name-on-the-account-",
+    "title": "How can I change my name on the account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000563226-what-s-your-horror-movie-selection-like-",
+    "title": "What's your horror movie selection like?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000557464-how-to-find-full-length-movies-",
+    "title": "How to find full length movies?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000551255-why-are-movies-so-short-",
+    "title": "Why are movies so short?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000567741-do-you-support-tv-shows-",
+    "title": "Do you support TV shows?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600595-finding-fun-and-safe-content-for-kids-on-reveel",
+    "title": "Finding Fun and Safe Content for Kids on Reveel"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600596-discover-a-diverse-world-of-entertainment-on-reveel-",
+    "title": "Discover a Diverse World of Entertainment on Reveel!"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600589-what-movies-and-shows-can-i-watch-on-reveel-in-my-area-",
+    "title": "What movies and shows can I watch on Reveel in my area?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600663-what-types-of-content-does-reveel-offer-",
+    "title": "What types of content does Reveel offer?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000599458-is-reveel-available-in-french-language-and-does-it-have-a-good-collection-of-french-movies-",
+    "title": "Is Reveel available in French language and does it have a good collection of French movies?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600061-is-there-a-limit-to-how-much-content-i-can-watch-on-reveel-each-month-",
+    "title": "Is there a limit to how much content I can watch on Reveel each month?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000568792-what-is-the-picture-quality-like-on-reveel-streaming-",
+    "title": "What is the picture quality like on Reveel streaming?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000572640-what-is-the-quality-of-the-video-",
+    "title": "What is the quality of the video?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000638328-does-reveel-now-offers-4k-streaming-",
+    "title": "Does Reveel now offers 4K streaming?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000638329-what-audio-format-does-reveel-use-",
+    "title": "What audio format does Reveel use?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000562893-why-are-the-content-limited-to-english-only-",
+    "title": "Why are the content limited to English only?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000554619-is-reveel-a-telegram-station-",
+    "title": "Is Reveel a telegram station?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600042-what-types-of-content-can-i-watch-on-reveel-s-facebook-page-",
+    "title": "What types of content can I watch on Reveel's Facebook page?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000567728-how-often-does-reveel-add-content-",
+    "title": "How often does Reveel add content?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600067-what-is-the-difference-between-reveel-and-other-streaming-services-",
+    "title": "What is the difference between Reveel and other streaming services?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600662-can-i-watch-content-on-reveel-without-an-internet-connection-",
+    "title": "Can I watch content on Reveel without an internet connection?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000571966-fix-audio-only-playback-on-reveel-quick-troubleshooting-steps-",
+    "title": "Fix Audio Only Playback on Reveel: Quick Troubleshooting Steps!"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000571968-my-streaming-stops-in-the-middle-i-use-ios-what-do-i-do-",
+    "title": "My streaming stops in the middle. I use iOS. What do I do?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000559868-how-to-clear-browser-cache",
+    "title": "How to clear browser cache"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000561790-i-never-got-an-icon-after-download",
+    "title": "I never got an icon after download"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000563199-how-do-i-use-airplay-",
+    "title": "How do I use AirPlay?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000563281-do-i-need-an-internet-connection-to-play-movies-",
+    "title": "Do I need an internet connection to play movies?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000562877-can-i-use-the-same-account-in-all-my-devices-",
+    "title": "Can I use the same account in all my devices?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000599471-why-is-reveel-requiring-location-during-sign-up-",
+    "title": "Why is Reveel requiring location during sign up?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600064-what-is-the-recommended-internet-speed-for-streaming-content-on-reveel-",
+    "title": "What is the recommended internet speed for streaming content on Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000572642-why-does-it-want-to-know-my-location-",
+    "title": "Why does it want to know my location?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000562868-how-to-install-reveel-on-your-mobile-device-or-tablet",
+    "title": "How to install Reveel on your mobile device or tablet"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000563178-can-i-chromecast-reveel-",
+    "title": "Can I chromecast Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000564137-how-to-install-reveel-on-your-firestick-tv",
+    "title": "How to install Reveel on your Firestick TV"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000625889-fix-your-reveel-app-on-roku-in-just-a-few-steps-",
+    "title": "Fix Your Reveel App on Roku in Just a Few Steps!"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000542648-does-this-work-on-fire-stick-too-",
+    "title": "Does this work on fire stick too?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634598-can-i-watch-videos-on-multiple-devices-with-a-free-account-",
+    "title": "Can I watch videos on multiple devices with a free account?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634600-will-i-see-ads-on-premium-or-vip-tiers-",
+    "title": "Will I see ads on Premium or VIP tiers?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634601-what-are-odis-and-why-do-they-remain-on-premium-and-vip-tiers-",
+    "title": "What are ODIS, and why do they remain on Premium and VIP tiers?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634605-why-do-featured-segments-still-have-ads-",
+    "title": "Why do featured segments still have ads?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635057-how-can-i-cancel-my-subscription-on-android-",
+    "title": "How can I cancel my subscription on Android?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000635058-how-can-i-cancel-my-subscription-on-ios-",
+    "title": "How can I cancel my subscription on iOS?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000600065-how-do-i-reactivate-a-cancelled-reveel-subscription-",
+    "title": "How do I reactivate a cancelled Reveel subscription?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000569081-how-is-my-credit-card-information-stored-",
+    "title": "How is my credit card information stored?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623644-how-to-deactivate-your-reveel-account",
+    "title": "How to Deactivate Your Reveel Account"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000541625-i-am-unable-to-set-my-birthday",
+    "title": "I am unable to set my birthday"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000645562-what-happens-if-i-upload-a-thumbnail-with-laurels-",
+    "title": "What happens if I upload a thumbnail with laurels?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000645599-can-i-change-the-thumbnail-on-my-film-",
+    "title": "Can I change the thumbnail on my film?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630619-how-long-will-it-take-to-receive-my-payment-once-i-submit-my-information-",
+    "title": "How long will it take to receive my payment once I submit my information?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630621-can-i-see-a-history-of-my-payments-on-reveel-",
+    "title": "Can I see a history of my payments on Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630630-how-can-i-avoid-payment-rejections-",
+    "title": "How can I avoid payment rejections?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630633-what-if-i-need-to-update-my-payment-information-",
+    "title": "What if I need to update my payment information?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630693-what-happens-if-i-don-t-reach-the-minimum-payout-threshold-within-a-certain-period-",
+    "title": "What happens if I don't reach the minimum payout threshold within a certain period?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630517-how-will-i-get-paid-for-my-films-on-reveel-",
+    "title": "How will I get paid for my films on Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630518-when-will-i-start-receiving-payments-",
+    "title": "When will I start receiving payments?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630525-is-there-a-minimum-amount-i-need-to-earn-before-i-can-receive-a-payout-",
+    "title": "Is there a minimum amount I need to earn before I can receive a payout?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630529-can-i-choose-how-i-want-to-get-paid-",
+    "title": "Can I choose how I want to get paid?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630530-where-can-i-find-more-information-about-filmmaker-payments-on-reveel-",
+    "title": "Where can I find more information about filmmaker payments on Reveel?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630531-do-i-need-to-have-an-account-on-reveel-to-receive-payment-for-my-films-",
+    "title": "Do I need to have an account on Reveel to receive payment for my films?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630538-is-there-anything-else-i-need-to-do-to-be-eligible-to-receive-payments-",
+    "title": "Is there anything else I need to do to be eligible to receive payments?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000541447-what-is-your-monetization-structure-",
+    "title": "What is your monetization structure?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000634209-how-does-reveel-promote-films-and-what-is-the-approximate-cpm-cost-per-mille-",
+    "title": "How does Reveel promote films and what is the approximate CPM (Cost Per Mille)?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630574-what-are-the-fees-for-international-payments-",
+    "title": "What are the fees for international payments?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630593-what-do-i-need-to-do-to-receive-an-international-payment-",
+    "title": "What do I need to do to receive an international payment?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630695-what-types-of-tax-forms-do-filmmakers-need-to-submit-",
+    "title": "What types of tax forms do filmmakers need to submit?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630696-what-happens-if-a-filmmaker-does-not-submit-the-required-tax-form-",
+    "title": "What happens if a filmmaker does not submit the required tax form?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000630535-what-happens-if-i-haven-t-claimed-my-films-yet-",
+    "title": "What happens if I haven't claimed my films yet?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000626404-my-films-are-not-linked-to-my-account-i-want-to-claim-them-",
+    "title": "My films are not linked to my account. I want to claim them."
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000558516-is-there-any-cost-associated-with-this-",
+    "title": "Is there any cost associated with this?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000626167-dogs-versus-cats-",
+    "title": "Dogs versus cats?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623935-can-i-receive-assistance-if-i-encounter-issues-with-thumbnail-sizing-during-submission-",
+    "title": "Can I receive assistance if I encounter issues with thumbnail sizing during submission?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623936-what-can-i-do-to-prevent-errors-when-submitting-a-web-series-with-episodes-",
+    "title": "What can I do to prevent errors when submitting a web series with episodes?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623943-is-there-a-specific-format-for-the-episode-guide-in-a-web-series-submission-",
+    "title": "Is there a specific format for the episode guide in a web series submission?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623946-are-there-specific-requirements-for-subtitles-beyond-the-inclusion-of-srt-files-",
+    "title": "Are there specific requirements for subtitles beyond the inclusion of SRT files?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000623947-can-i-submit-a-revised-episode-guide-for-my-web-series-after-the-initial-submission-",
+    "title": "Can I submit a revised episode guide for my web series after the initial submission?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000642732-how-to-edit-remove-or-add-srt-files-",
+    "title": "How to edit, remove or add .srt files?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000631690-why-do-we-need-to-submit-separate-srt-files-",
+    "title": "Why do we need to submit separate SRT Files?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000631193-how-should-i-name-the-srt-file-should-i-use-srt-or-srt-without-format-",
+    "title": "How should I name the SRT file? Should I use SRT or SRT without format?"
+  },
+  {
+    "link": "https://help.reveel.net/support/solutions/articles/72000631222-are-subtitles-required-for-monetization-",
+    "title": "Are subtitles required for monetization?"
   }
 ]
