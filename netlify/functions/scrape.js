@@ -81,6 +81,9 @@ export const handler = async (event) => {
       Question: "how do i sign up for reveel"
       Answer: 5
 
+      Question: Are subtitles required for monetization?
+      Answer: 25
+      
       Do NOT format your answer as markdown, do NOT include the title, do NOT add any extra text.
       Question: "${query}"
       `;
