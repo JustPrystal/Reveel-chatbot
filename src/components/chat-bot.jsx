@@ -93,51 +93,69 @@ export default function ChatBot() {
           className="bot-initial-message"
           style={{ flexDirection: "column", alignItems: "flex-start" }}
         >
-          <BotMessage message="Hello! what can i assist you with" />
-          {isBugReport === null && (
-            <div className="quickreplies">
-              <button
-                disabled={isBugReport !== null}
-                onClick={() => setIsBugReport(true)}
-              >
-                Report a bug
-              </button>
-              <button
-                disabled={isBugReport !== null}
-                onClick={() => setIsBugReport(false)}
-              >
-                General Inquiry
-              </button>
-            </div>
-          )}
+          <BotMessage
+            message="Hi there! How can I help you today?"
+            quickReplies={
+              isBugReport === null ? (
+                <>
+                  <button
+                    disabled={isBugReport !== null}
+                    onClick={() => setIsBugReport(true)}
+                  >
+                    Report a bug
+                  </button>
+                  <button
+                    disabled={isBugReport !== null}
+                    onClick={() => setIsBugReport(false)}
+                  >
+                    General Inquiry
+                  </button>
+                </>
+              ) : null
+            }
+          />
         </div>
         {isBugReport !== null && (
           <UserMessage
             message={
-              isBugReport ? "This is a bug report" : "This is a general inquiry"
+              isBugReport
+                ? "I would like to report a bug"
+                : "I have a few questions about reveel"
             }
           />
         )}
-        {isBugReport !== null && <BotMessage message="What is your email?" />}
+        {isBugReport !== null && (
+          <BotMessage
+            message="Please enter your email so we can get in touch if needed."
+            delay={800}
+          />
+        )}
         {isBugReport !== null && userInfo.email === null && (
-          <form
-            className="user-message bot-initial-message"
-            onSubmit={handleEmailSubmit}
-            style={{
-              flexDirection: "column",
-              alignItems: "flex-start",
-              gap: "10px",
-            }}
-          >
-            <p>Enter Your email:</p>
-            <input
-              type="email"
-              name="email"
-              placeholder="your@email.com"
-              required
-            />
-            <button type="submit">Submit</button>
-          </form>
+          <UserMessage
+            message={
+              <>
+                <form
+                  className="bot-initial-message"
+                  onSubmit={handleEmailSubmit}
+                  style={{
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    gap: "10px",
+                  }}
+                >
+                  <p>Enter Your email:</p>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                  <button type="submit">Submit</button>
+                </form>
+              </>
+            }
+            delay={800}
+          />
         )}
         {userInfo.email !== null && (
           <UserMessage message={`${userInfo.email}`} />
@@ -159,34 +177,42 @@ export default function ChatBot() {
                 and the app version
               </>
             }
+            delay={1200}
           />
         )}
         {isBugReport === true &&
           userInfo.email !== null &&
           userInfo.description === null && (
-            <form
-              className="user-message bot-initial-message"
-              onSubmit={handleDescriptionSubmit}
-              style={{
-                flexDirection: "column",
-                alignItems: "flex-start",
-                gap: "10px",
-              }}
-            >
-              <p>Enter a brief description of the issue:</p>
-              <textarea
-                name="description"
-                placeholder="Describe the issue..."
-                required
-                style={{
-                  width: "100%",
-                  minHeight: "200px",
-                  maxHeight: "200px",
-                  maxWidth: "300px",
-                }}
-              />
-              <button type="submit">Submit</button>
-            </form>
+            <UserMessage
+              message={
+                <>
+                  <form
+                    className="bot-initial-message"
+                    onSubmit={handleDescriptionSubmit}
+                    style={{
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                      gap: "10px",
+                    }}
+                  >
+                    <p>Enter a brief description of the issue:</p>
+                    <textarea
+                      name="description"
+                      placeholder="Describe the issue..."
+                      required
+                      style={{
+                        width: "100%",
+                        minHeight: "200px",
+                        maxHeight: "200px",
+                        maxWidth: "300px",
+                      }}
+                    />
+                    <button type="submit">Submit</button>
+                  </form>
+                </>
+              }
+              delay={1200}
+            />
           )}
         {isBugReport === true &&
           userInfo.email !== null &&
@@ -194,7 +220,8 @@ export default function ChatBot() {
             <>
               <UserMessage message={`${userInfo.description}`} />
               <BotMessage
-                message={`Thank you for your report. We'll get back to you soon`}
+                message={`Thank you for your report! Our team will review it and get back to you as soon as possible.`}
+                delay={600}
               />
             </>
           )}
@@ -203,51 +230,56 @@ export default function ChatBot() {
             className="bot-initial-message"
             style={{ flexDirection: "column", alignItems: "flex-start" }}
           >
-            <BotMessage message="What is your role" />
-            {userInfo.userRole === null && (
-              <div className="quickreplies">
-                <button
-                  disabled={userInfo.userRole !== null}
-                  onClick={() =>
-                    setUserInfo({ ...userInfo, userRole: "viewer" })
-                  }
-                >
-                  Viewer
-                </button>
-                <button
-                  disabled={userInfo.userRole !== null}
-                  onClick={() =>
-                    setUserInfo({ ...userInfo, userRole: "subscriber" })
-                  }
-                >
-                  Subscriber
-                </button>
-                <button
-                  disabled={userInfo.userRole !== null}
-                  onClick={() =>
-                    setUserInfo({ ...userInfo, userRole: "film_maker" })
-                  }
-                >
-                  Film Maker
-                </button>
-                <button
-                  disabled={userInfo.userRole !== null}
-                  onClick={() =>
-                    setUserInfo({ ...userInfo, userRole: "advertiser" })
-                  }
-                >
-                  Advertiser
-                </button>
-                <button
-                  disabled={userInfo.userRole !== null}
-                  onClick={() =>
-                    setUserInfo({ ...userInfo, userRole: "affiliate" })
-                  }
-                >
-                  Affiliate
-                </button>
-              </div>
-            )}
+            <BotMessage
+              message="Great! To help you better, could you tell me your role?"
+              delay={800}
+              quickReplies={
+                userInfo.userRole === null ? (
+                  <>
+                    <button
+                      disabled={userInfo.userRole !== null}
+                      onClick={() =>
+                        setUserInfo({ ...userInfo, userRole: "viewer" })
+                      }
+                    >
+                      Viewer
+                    </button>
+                    <button
+                      disabled={userInfo.userRole !== null}
+                      onClick={() =>
+                        setUserInfo({ ...userInfo, userRole: "subscriber" })
+                      }
+                    >
+                      Subscriber
+                    </button>
+                    <button
+                      disabled={userInfo.userRole !== null}
+                      onClick={() =>
+                        setUserInfo({ ...userInfo, userRole: "film_maker" })
+                      }
+                    >
+                      Film Maker
+                    </button>
+                    <button
+                      disabled={userInfo.userRole !== null}
+                      onClick={() =>
+                        setUserInfo({ ...userInfo, userRole: "advertiser" })
+                      }
+                    >
+                      Advertiser
+                    </button>
+                    <button
+                      disabled={userInfo.userRole !== null}
+                      onClick={() =>
+                        setUserInfo({ ...userInfo, userRole: "affiliate" })
+                      }
+                    >
+                      Affiliate
+                    </button>
+                  </>
+                ) : null
+              }
+            />
           </div>
         )}
         {isBugReport === false &&
@@ -257,8 +289,9 @@ export default function ChatBot() {
               <UserMessage message={`${userInfo.userRole}`} />
               <BotMessage
                 message={
-                  "You can now use the field at the bottom of your screen to ask questions"
+                  "All set! Feel free to type your questions in the box below."
                 }
+                delay={800}
               />
             </>
           )}
@@ -266,6 +299,7 @@ export default function ChatBot() {
           userInfo.email !== null &&
           userInfo.description !== null && (
             <button
+              className="reset-chat-btn"
               style={{
                 marginTop: "10px",
                 border: "none",

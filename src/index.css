@@ -30,7 +30,7 @@ body,
   overflow: hidden;
   margin: auto;
   border: 1px solid #e5e7eb;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 /* Header */
@@ -230,7 +230,6 @@ body,
 .bot-initial-message {
   display: flex;
   align-items: center;
-  max-width: 85%;
   overflow: hidden;
 }
 
@@ -278,4 +277,14 @@ textarea {
 
 .bot-initial-message button[type="submit"]:active {
   transform: scale(0.97);
+}
+.reset-chat-btn {
+  opacity: 0;
+  animation: fadeInBtn 0.3s ease-in 0.6s forwards;
+}
+
+@keyframes fadeInBtn {
+  to {
+    opacity: 1;
+  }
 }
