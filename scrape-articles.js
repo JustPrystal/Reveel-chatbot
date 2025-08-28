@@ -18,7 +18,6 @@ async function getArticlesAndFolders(url, seenFolders, seenArticles) {
   const articles = [];
   const folderLinks = [];
 
-  // Find all folder links
   $("a[href^='/support/solutions/folders/']").each((i, link) => {
     const href = $(link).attr("href");
     if (!href) return;
@@ -29,7 +28,6 @@ async function getArticlesAndFolders(url, seenFolders, seenArticles) {
     }
   });
 
-  // Find all article links
   $("a[href^='/support/solutions/articles/']").each((i, link) => {
     const href = $(link).attr("href");
     if (!href) return;
