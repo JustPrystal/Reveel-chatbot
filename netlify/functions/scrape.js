@@ -98,7 +98,7 @@ export const handler = async (event) => {
     if (answerNum === -2) {
       return {
         statusCode: 200,
-        body: JSON.stringify("I cannot answer that."),
+        body: JSON.stringify("Could You rephrase your question?"),
       };
     }
 
