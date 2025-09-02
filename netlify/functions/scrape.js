@@ -46,44 +46,48 @@ export const handler = async (event) => {
       .join("\n");
 
     const prompt = `
-You are a strict Q&A assistant. You have a knowledge base of articles:
+You are a strict Q&A classifier. You have a knowledge base of articles.
+
+Articles:
 ${articleList}
 
-Follow these rules exactly:
+Your job is to read the user's input and follow these exact rules:
 
+RULES:
 1. If the input is NOT a question (not interrogative), reply EXACTLY: I can only answer questions.
 2. If the input IS a question:
-   - If it matches an article, reply ONLY with the number of the article (just the number).
-   - If no article is relevant, reply EXACTLY: article-doesnt-exist.
-3. Never reply with anything other than: a number, "article-doesnt-exist", or "I can only answer questions".
-
-ARTICLES:
-${articleList}
+    - If it semantically matches an article from the list, reply ONLY with the article number (just the number, no extra text).
+    - If no article is relevant, reply EXACTLY: article-doesnt-exist.
+3. NEVER explain your reasoning, NEVER output anything other than:
+    - a single number (e.g., 2)
+    - OR "article-doesnt-exist"
+    - OR "I can only answer questions".
 
 EXAMPLES:
 
-Input: "reset password"
-Answer: article-doesnt-exist
+Input: reset password
+Output: I can only answer questions
 
-Input: "how can I reset my password"
-Answer: 1
+Input: how can I reset my password
+Output: 1
 
-Input: "where can i change my username"
-Answer: 2
+Input: where can I change my username
+Output: 2
 
-Input: "i want to delete my account"
-Answer: article-doesnt-exist
+Input: i want to delete my account
+Output: I can only answer questions
 
-Input: "how to delete my account"
-Answer: 3
+Input: how to delete my account
+Output: 3
 
-Input: "how do i contact support"
-Answer: article-doesnt-exist
+Input: how do I contact support
+Output: article-doesnt-exist
 
-Input: "hi wsg what u up to"
-Answer: I can only answer questions
+Input: hi wsg what u up to
+Output: I can only answer questions
 
-NOW, strictly follow the rules.
+NOW follow the rules STRICTLY.
+
 Input: "${query}"
 `;
 
