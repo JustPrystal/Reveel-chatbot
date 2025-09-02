@@ -50,6 +50,8 @@ export const handler = async (event) => {
       You cannot reply with article-doesnt-exist if
       1) the user provides additional context or clarification
       2) The question cannot be something irrelevant it must seem like a valid question 
+      3) No Inappropriate questions/ no swear words
+      if u cant reply with article-doesnt-exist just reply with: "Im sorry, i cannot answer that"
 
       reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
       If the question contains extra words, typos, or repeated phrases, ignore them and focus on the main topic. Always pick the closest relevant article, even if the question is not perfectly phrased.
