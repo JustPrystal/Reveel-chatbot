@@ -39,13 +39,14 @@ export const handler = async (event) => {
       .map((a, i) => `${i + 1}. ${a.title}`)
       .join("\n");
 
-    const prompt = `
+const prompt = `
 You are a strict knowledge base assistant. Here is a numbered list of article titles:
 ${articleList}
 
 Your rules:
 - If the input is NOT an interrogative (not a question), reply ONLY with: I can only answer questions.
 - If the input IS a question, reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
+- If the input is a number or just a number (e.g. "2"), reply ONLY with: I can only answer questions.
 - Never reply with anything except a number, "article-doesnt-exist", or "I can only answer questions".
 - Do NOT format your answer as markdown, do NOT include the title, do NOT add any extra text, explanation, or greeting.
 - Do NOT answer questions that are not in the knowledge base; reply ONLY with "article-doesnt-exist".
@@ -63,6 +64,9 @@ Input: "123123@gmail.com"
 Answer: I can only answer questions
 
 Input: "wsg gng"
+Answer: I can only answer questions
+
+Input: "2"
 Answer: I can only answer questions
 
 Examples of questions and their expected answer:
