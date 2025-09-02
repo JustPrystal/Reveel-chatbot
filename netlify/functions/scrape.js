@@ -53,6 +53,22 @@ export const handler = async (event) => {
       1. Does the question contain any keywords that match the article titles? If so, respond with the index of the article that best answers the question.
       2. If not, respond with "-1"
       If the question is not an interrogative statement, respond with "-2"
+      
+      Examples:
+
+      question: reveel khan what is
+      answer: 0
+      
+      question: what is reveel?
+      answer: 0
+
+      question: Are subtitles required for monetization?
+      answer: 249
+
+      question: How should I name the SRT file? Should I use SRT or SRT without format?
+      answer: 248
+
+
       `;
 
     const gptResponse = await fetch(
