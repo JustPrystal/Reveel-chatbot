@@ -56,23 +56,16 @@ If the question is not an interrogative statement, respond ONLY with "-2".
 
 Examples:
 User question: "what is reveel"
-Response: 7
+Response: 0
 
 User question: "what is reveeel"
-Response: 7
+Response: 0
 
 User question: "what is reveel gng pls tell gng plsssss"
-Response: 7
-
-User question: "how do i sign up for reveel"
-Response: 5
+Response: 0
 
 User question: "how do I contact support"
 Response: -1
-
-User question: "Are subtitles required for monetization?"
-Response: 25
-
 
 Always respond ONLY with the index number, "-1", or "-2" as described above. Do not add any extra text.
 `;
