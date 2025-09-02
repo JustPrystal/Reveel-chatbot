@@ -65,8 +65,8 @@ export const handler = async (event) => {
       1) the user provides additional context or clarification
       2) The question cannot be something irrelevant it must seem like a valid question 
       3) No Inappropriate questions/ no swear words
-      if u cant reply with article-doesnt-exist just reply with: "Im sorry, i cannot answer that"
       4) The users prompt is interrogative ie it seems like a question
+      if u cant reply with article-doesnt-exist just reply with: "Im sorry, i cannot answer that"
 
     
       reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
