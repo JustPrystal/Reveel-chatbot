@@ -58,6 +58,7 @@ RULES:
 2. If the input IS a question:
     - If it semantically matches an article from the list, reply ONLY with the article number (just the number, no extra text).
     - If no article is relevant, reply EXACTLY: article-doesnt-exist.
+    - If the input is a greeting, slang, random text, or just a number, reply EXACTLY: I can only answer questions.
 3. NEVER explain your reasoning, NEVER output anything other than:
     - a single number (e.g., 2)
     - OR "article-doesnt-exist"
@@ -85,6 +86,29 @@ Output: article-doesnt-exist
 
 Input: hi wsg what u up to
 Output: I can only answer questions
+
+Input: hi wsg
+Output: I can only answer questions
+
+Input: hello
+Output: I can only answer questions
+
+Input: hey
+Output: I can only answer questions
+
+Input: 123123@gmail.com
+Output: I can only answer questions
+
+Input: sigma
+Output: I can only answer questions
+
+Input: 2
+Output: I can only answer questions
+
+Input: 42
+Output: I can only answer questions
+
+
 
 NOW follow the rules STRICTLY.
 
