@@ -43,33 +43,39 @@ export const handler = async (event) => {
     console.log("Article List:\n", articleList);
 
     const prompt = `
-      You are a knowledge base assistant. Here is a list of article objects with their respective indices:
-      ${JSON.stringify(articleList, null, 2)}
+You are a knowledge base assistant. Here is a list of article objects with their respective indices:
+${JSON.stringify(articleList, null, 2)}
 
-      This is the user question: "${query}"
+This is the user question: "${query}"
 
-      First check if the user's question statement in the inverted commas is actually an interrogative statement (i.e. Is it a question?)
-      If it is indeed a question: Check:
-      1. Does the question contain any keywords that match the article titles? If so, respond with the index of the article that best answers the question.
-      2. If not, respond with "-1"
-      If the question is not an interrogative statement, respond with "-2"
-      
-      Examples:
+First, check if the user's question statement in the inverted commas is actually an interrogative statement (i.e. Is it a question?).
+If it is a question:
+1. Check if the question contains any keywords or topics that match or are closely related to the article titles (even if there are extra words, typos, or the phrasing is not exact). If so, respond ONLY with the index of the article that best answers the question.
+2. If there is no match, respond ONLY with "-1".
+If the question is not an interrogative statement, respond ONLY with "-2".
 
-      question: reveel khan what is
-      answer: 0
-      
-      question: what is reveel?
-      answer: 0
+Examples:
+User question: "what is reveel"
+Response: 7
 
-      question: Are subtitles required for monetization?
-      answer: 249
+User question: "what is reveeel"
+Response: 7
 
-      question: How should I name the SRT file? Should I use SRT or SRT without format?
-      answer: 248
+User question: "what is reveel gng pls tell gng plsssss"
+Response: 7
+
+User question: "how do i sign up for reveel"
+Response: 5
+
+User question: "how do I contact support"
+Response: -1
+
+User question: "Are subtitles required for monetization?"
+Response: 25
 
 
-      `;
+Always respond ONLY with the index number, "-1", or "-2" as described above. Do not add any extra text.
+`;
 
     const gptResponse = await fetch(
       "https://api.openai.com/v1/chat/completions",
@@ -102,7 +108,7 @@ export const handler = async (event) => {
         ? result.choices[0].message.content.trim()
         : "";
 
-    if (answer === '-1') {
+    if (answer === "-1") {
       return {
         statusCode: 200,
         body: JSON.stringify({ error: "article-doesnt-exist" }),
