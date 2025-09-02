@@ -2,6 +2,35 @@ import { readFileSync } from "fs";
 import path from "path";
 import process from "process";
 
+const interrogatives = [
+  "who",
+  "what",
+  "when",
+  "where",
+  "why",
+  "how",
+  "is",
+  "are",
+  "can",
+  "does",
+  "do",
+  "did",
+  "will",
+  "should",
+  "could",
+  "would",
+  "may",
+  "might",
+];
+
+function isQuestion(str) {
+  const lower = str.trim().toLowerCase();
+  // Starts with interrogative or ends with a question mark
+  return (
+    interrogatives.some((w) => lower.startsWith(w + " ")) || lower.endsWith("?")
+  );
+}
+
 export const handler = async (event) => {
   try {
     const query = event.queryStringParameters?.query;
@@ -15,6 +44,12 @@ export const handler = async (event) => {
       return {
         statusCode: 200,
         body: JSON.stringify("i cannot answer that"),
+      };
+    }
+    if (!isQuestion(query)) {
+      return {
+        statusCode: 200,
+        body: JSON.stringify("I can only answer questions"),
       };
     }
 
