@@ -177,10 +177,18 @@ export default function ChatBot() {
         <>
           {messageText}
           {link && (
-            <a href={link} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '4px' }}>
-              Link to Blog
-            </a>
-          )}&nbsp;Feel free to ask more questions
+            <>
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginLeft: "4px" }}
+              >
+                Link to Blog
+              </a>{" "}
+              <p>feel free to ask further questions</p>
+            </>
+          )}
         </>
       );
     } catch (err) {

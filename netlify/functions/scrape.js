@@ -46,6 +46,10 @@ export const handler = async (event) => {
       You have to decide if the user is asking a question or not
       if the user asks random stuff which is not a question reply with: I can only answer questions about reveel. feel free to ask more questions.
       If the question asked has no matching article exists, reply ONLY with: article-doesnt-exist.
+    
+      You cannot reply with article-doesnt-exist if
+      1) the user provides additional context or clarification
+      2) The question cannot be something irrelevant it must seem like a valid question 
 
       reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
       If the question contains extra words, typos, or repeated phrases, ignore them and focus on the main topic. Always pick the closest relevant article, even if the question is not perfectly phrased.
