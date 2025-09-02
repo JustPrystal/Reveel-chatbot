@@ -65,20 +65,20 @@ RULES:
 
 EXAMPLES:
 
-Input: reset password
-Output: I can only answer questions
+Input: When did Reveel launch?
+Output: 3
 
 Input: how can I reset my password
 Output: 1
 
-Input: where can I change my username
-Output: 2
+Input: Where can I adjust the speed?
+Output: 6
 
 Input: i want to delete my account
-Output: I can only answer questions
+Output: article-doesnt-exist
 
-Input: how to delete my account
-Output: 3
+Input: how to save movies on Favorites
+Output: 4
 
 Input: how do I contact support
 Output: article-doesnt-exist
