@@ -39,13 +39,18 @@ export const handler = async (event) => {
       .map((a, i) => `${i + 1}. ${a.title}`)
       .join("\n");
 
-  const prompt = `
-You are a knowledge base assistant. Here is a list of article titles:
+    const prompt = `
+You are a strict knowledge base assistant. Here is a numbered list of article titles:
 ${articleList}
 
-If the input is NOT an interrogative (not a question), reply ONLY with: I can only answer questions.
-
-If the input IS a question, reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
+Your rules:
+- If the input is NOT an interrogative (not a question), reply ONLY with: I can only answer questions.
+- If the input IS a question, reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
+- Never reply with anything except a number, "article-doesnt-exist", or "I can only answer questions".
+- Do NOT format your answer as markdown, do NOT include the title, do NOT add any extra text, explanation, or greeting.
+- Do NOT answer questions that are not in the knowledge base; reply ONLY with "article-doesnt-exist".
+- Do NOT answer non-questions; reply ONLY with "I can only answer questions".
+- Do NOT answer with anything except the above options.
 
 Examples of non-questions and their expected answer:
 Input: "hello"
@@ -67,17 +72,22 @@ Answer: 7
 Input: "how do i sign up for reveel"
 Answer: 5
 
-Input: Are subtitles required for monetization?
+Input: "Are subtitles required for monetization?"
 Answer: 25
 
-Examples of questions that arent in the knowledge base:
+Examples of questions that aren't in the knowledge base:
 Input: "who can use reveel?"
 Answer: article-doesnt-exist
 
 Input: "is there batch uploading?"
 Answer: article-doesnt-exist
 
+Input: "what is the meaning of life?"
+Answer: article-doesnt-exist
+
+Do NOT answer with anything except a number, "article-doesnt-exist", or "I can only answer questions".
 Do NOT format your answer as markdown, do NOT include the title, do NOT add any extra text.
+
 Input: "${query}"
 `;
 
