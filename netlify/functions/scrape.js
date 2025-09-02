@@ -108,6 +108,24 @@ Output: I can only answer questions
 Input: 42
 Output: I can only answer questions
 
+Input: what's up
+Output: I can only answer questions
+
+Input: wsg
+Output: I can only answer questions
+
+Input: yo
+Output: I can only answer questions
+
+Input: sup
+Output: I can only answer questions
+
+Input: randomtext
+Output: I can only answer questions
+
+Input: asdfghjkl
+Output: I can only answer questions
+
 
 
 NOW follow the rules STRICTLY.
