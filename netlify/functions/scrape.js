@@ -84,7 +84,7 @@ export const handler = async (event) => {
     if (!match) {
       return {
         statusCode: 200,
-        body: JSON.stringify({ error: "invalid-model-output" }),
+        body: JSON.stringify({ error: "Could You rephrase your question?" }),
       };
     }
 
