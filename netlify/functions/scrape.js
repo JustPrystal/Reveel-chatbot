@@ -25,7 +25,6 @@ const interrogatives = [
 
 function isQuestion(str) {
   const lower = str.trim().toLowerCase();
-  // Starts with interrogative or ends with a question mark
   return (
     interrogatives.some((w) => lower.startsWith(w + " ")) || lower.endsWith("?")
   );
@@ -119,11 +118,101 @@ Output: 4
 Input: how do I contact support
 Output: article-doesnt-exist
 
-Input: hi wsg what u up to
-Output: I can only answer questions
+Input: What is Reveel?
+Output: 7
 
-Input: hi wsg
-Output: I can only answer questions
+Input: How do I sign up for Reveel?
+Output: 5
+
+Input: Are subtitles required for monetization?
+Output: 25
+
+Input: Who can use Reveel?
+Output: article-doesnt-exist
+
+Input: Is there batch uploading?
+Output: article-doesnt-exist
+
+Input: What is the meaning of life?
+Output: article-doesnt-exist
+
+Input: Can I upload videos in 4K?
+Output: 12
+
+Input: How do I change my email address?
+Output: 8
+
+Input: What payment methods are accepted?
+Output: 15
+
+Input: How do I delete my account?
+Output: article-doesnt-exist
+
+Input: What is the refund policy?
+Output: 17
+
+Input: How do I contact technical support?
+Output: article-doesnt-exist
+
+Input: Can I share my account?
+Output: article-doesnt-exist
+
+Input: How do I reset my password?
+Output: 1
+
+Input: How do I update my profile picture?
+Output: 9
+
+Input: How do I enable notifications?
+Output: 10
+
+Input: How do I turn off notifications?
+Output: 11
+
+Input: How do I change my subscription plan?
+Output: 13
+
+Input: How do I cancel my subscription?
+Output: 14
+
+Input: What is the maximum video length?
+Output: 16
+
+Input: How do I report a bug?
+Output: 18
+
+Input: How do I request a feature?
+Output: 19
+
+Input: How do I access analytics?
+Output: 20
+
+Input: How do I monetize my content?
+Output: 21
+
+Input: How do I withdraw my earnings?
+Output: 22
+
+Input: How do I set up two-factor authentication?
+Output: 23
+
+Input: How do I invite collaborators?
+Output: 24
+
+Input: What are the community guidelines?
+Output: 26
+
+Input: What is the privacy policy?
+Output: 27
+
+Input: What is the terms of service?
+Output: 28
+
+Input: What is the copyright policy?
+Output: 29
+
+Input: What is the content rating system?
+Output: 30
 
 Input: hello
 Output: I can only answer questions
@@ -131,19 +220,7 @@ Output: I can only answer questions
 Input: hey
 Output: I can only answer questions
 
-Input: 123123@gmail.com
-Output: I can only answer questions
-
-Input: sigma
-Output: I can only answer questions
-
-Input: 2
-Output: I can only answer questions
-
-Input: 42
-Output: I can only answer questions
-
-Input: what's up
+Input: hi
 Output: I can only answer questions
 
 Input: wsg
@@ -161,7 +238,56 @@ Output: I can only answer questions
 Input: asdfghjkl
 Output: I can only answer questions
 
+Input: 123123@gmail.com
+Output: I can only answer questions
 
+Input: sigma
+Output: I can only answer questions
+
+Input: 2
+Output: I can only answer questions
+
+Input: 42
+Output: I can only answer questions
+
+Input: what's up
+Output: I can only answer questions
+
+Input: hmm i wonder what is reveel
+Output: I can only answer questions
+
+Input: I want to know about Reveel
+Output: I can only answer questions
+
+Input: Tell me about Reveel
+Output: I can only answer questions
+
+Input: Give me information about Reveel
+Output: I can only answer questions
+
+Input: I am interested in Reveel
+Output: I can only answer questions
+
+Input: Please help
+Output: I can only answer questions
+
+Input: Help
+Output: I can only answer questions
+
+Input: Support
+Output: I can only answer questions
+
+Input: I have a problem
+Output: I can only answer questions
+
+Input: I need assistance
+Output: I can only answer questions
+
+Input: I have a question
+Output: I can only answer questions
+
+Input: ?
+Output: I can only answer questions
 
 NOW follow the rules STRICTLY.
 
