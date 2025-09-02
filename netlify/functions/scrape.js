@@ -39,32 +39,47 @@ export const handler = async (event) => {
       .map((a, i) => `${i + 1}. ${a.title}`)
       .join("\n");
 
-    const prompt = `
-      You are a knowledge base assistant. Here is a list of article titles:
-      ${articleList}
+  const prompt = `
+You are a knowledge base assistant. Here is a list of article titles:
+${articleList}
 
-      If the input is NOT a question, reply ONLY with: I can only answer questions.
+If the input is NOT an interrogative (not a question), reply ONLY with: I can only answer questions.
 
-      If the input IS a question, reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
+If the input IS a question, reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
 
-      Input: "${query}"
+Examples of non-questions and their expected answer:
+Input: "hello"
+Answer: I can only answer questions
 
-      Examples of relevant questions and their expected answer:
-      Question: "what is reveel about"
-      Answer: 7
+Input: "sigma"
+Answer: I can only answer questions
 
-      Question: "what is reveel gng pls tell gng plsssss"
-      Answer: 7
+Input: "123123@gmail.com"
+Answer: I can only answer questions
 
-      Question: "how do i sign up for reveel"
-      Answer: 5
+Input: "wsg gng"
+Answer: I can only answer questions
 
-      Question: Are subtitles required for monetization?
-      Answer: 25
-      
-      Do NOT format your answer as markdown, do NOT include the title, do NOT add any extra text.
-      Question: "${query}"
-      `;
+Examples of questions and their expected answer:
+Input: "what is reveel about"
+Answer: 7
+
+Input: "how do i sign up for reveel"
+Answer: 5
+
+Input: Are subtitles required for monetization?
+Answer: 25
+
+Examples of questions that arent in the knowledge base:
+Input: "who can use reveel?"
+Answer: article-doesnt-exist
+
+Input: "is there batch uploading?"
+Answer: article-doesnt-exist
+
+Do NOT format your answer as markdown, do NOT include the title, do NOT add any extra text.
+Input: "${query}"
+`;
 
     const gptResponse = await fetch(
       "https://api.openai.com/v1/chat/completions",

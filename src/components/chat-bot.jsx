@@ -279,68 +279,70 @@ export default function ChatBot() {
       <div className="chatbot-header">
         <span className="chatbot-title">Reveel Chatbot</span>
       </div>
-      <div className="inner-dmxlcop12ze">
-        <BotMessage
-          message="Hi there! How can I help you today?"
-          quickReplies={
-            isBugReport === null ? (
-              <>
-                <button
-                  disabled={isBugReport !== null}
-                  onClick={() => (setIsBugReport(true), setStep("email"))}
-                >
-                  Report a bug
-                </button>
-                <button
-                  disabled={isBugReport !== null}
-                  onClick={() => (setIsBugReport(false), setStep("email"))}
-                >
-                  General Inquiry
-                </button>
-              </>
-            ) : null
-          }
-        />
-        {isBugReport !== null && (
-          <>
-            <UserMessage
-              message={
-                isBugReport
-                  ? "I would like to report a bug"
-                  : "I have a few questions about reveel"
-              }
-            />
-            <BotMessage
-              message="Please enter your email so we can get in touch if needed."
-              delay={600}
-            />
-          </>
-        )}
-        {messages.map((msg, idx) =>
-          msg.type === "bot" ? (
-            <BotMessage
-              key={idx}
-              message={msg.text}
-              delay={msg.delay}
-              quickReplies={msg.quickReplies}
-            />
-          ) : (
-            <UserMessage key={idx} message={msg.text} delay={msg.delay} />
-          )
-        )}
-        {loading && <BotTyping />}
-
-        {/* {isBugReport === true && userInfo.email !== null && (
+      <div className="container">
+        <div className="inner-dmxlcop12ze">
+          <BotMessage
+            message="Hi there! How can I help you today?"
+            quickReplies={
+              isBugReport === null ? (
+                <>
+                  <button
+                    disabled={isBugReport !== null}
+                    onClick={() => (setIsBugReport(true), setStep("email"))}
+                  >
+                    Report a bug
+                  </button>
+                  <button
+                    disabled={isBugReport !== null}
+                    onClick={() => (setIsBugReport(false), setStep("email"))}
+                  >
+                    General Inquiry
+                  </button>
+                </>
+              ) : null
+            }
+          />
+          {isBugReport !== null && (
+            <>
+              <UserMessage
+                message={
+                  isBugReport
+                    ? "I would like to report a bug"
+                    : "I have a few questions about reveel"
+                }
+              />
+              <BotMessage
+                message="Please enter your email so we can get in touch if needed."
+                delay={600}
+              />
+            </>
+          )}
+          {messages.map((msg, idx) =>
+            msg.type === "bot" ? (
+              <BotMessage
+                key={idx}
+                message={msg.text}
+                delay={msg.delay}
+                quickReplies={msg.quickReplies}
+              />
+            ) : (
+              <UserMessage key={idx} message={msg.text} delay={msg.delay} />
+            )
+          )}
+          {loading && <BotTyping />}
           <button
-            className="reset-chat-btn"
+            className="global-reset-chat-btn"
             style={{
-              marginTop: "10px",
+              width: "fit-content",
+              zIndex: 1000,
               border: "none",
-              color: "#333",
-              background: "transparent",
+              color: "white",
+              background: "#7273ee",
               padding: "8px 16px",
-              borderRadius: "4px",
+              borderRadius: "24px",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
               cursor: "pointer",
+              margin: "auto auto 0",
             }}
             onClick={() => {
               setMessages([]);
@@ -348,44 +350,16 @@ export default function ChatBot() {
               setUserInfo({
                 email: null,
                 userRole: null,
-                description: null,
+                device: null,
               });
               setInput("");
               setLoading(false);
+              setStep("initial");
             }}
           >
             Reset Chat
           </button>
-        )}
-        {isBugReport === false &&
-          userInfo.email !== null &&
-          userInfo.role !== null && (
-            <button
-              className="reset-chat-btn"
-              style={{
-                marginTop: "10px",
-                border: "none",
-                color: "#333",
-                background: "transparent",
-                padding: "8px 16px",
-                borderRadius: "4px",
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                setMessages([]);
-                setIsBugReport(null);
-                setUserInfo({
-                  email: null,
-                  userRole: null,
-                  description: null,
-                });
-                setInput("");
-                setLoading(false);
-              }}
-            >
-              Reset Chat
-            </button>
-          )} */}
+        </div>
       </div>
       <div className="input-field-x4cb14x">
         <input

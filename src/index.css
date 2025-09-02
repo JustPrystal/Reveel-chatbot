@@ -47,15 +47,40 @@ body,
   color: white;
   font-size: 18px;
 }
+.container {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
 
+.container::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.container::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+/* For Firefox */
+.container {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
 /* Chat Area */
 .inner-dmxlcop12ze {
-  flex: 1 1 auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   gap: 14px;
-  overflow-y: auto;
   background: #f9fafb;
 }
 
@@ -70,6 +95,7 @@ body,
   line-height: 1.5;
   box-shadow: 0 1px 4px rgba(99, 102, 241, 0.15);
   animation: fadeInMsg 0.4s ease;
+  overflow-wrap: anywhere;
 }
 
 .user-message {
@@ -83,6 +109,7 @@ body,
   line-height: 1.5;
   box-shadow: 0 1px 4px rgba(79, 70, 229, 0.15);
   animation: fadeInMsg 0.4s ease;
+  overflow-wrap: anywhere;
 }
 
 /* Input Section */
@@ -225,6 +252,7 @@ body,
   flex-direction: column;
   overflow: hidden;
   max-width: 80%;
+  flex-shrink: 0;
 }
 
 .bot-initial-message p {
