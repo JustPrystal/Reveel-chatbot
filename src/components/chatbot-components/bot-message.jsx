@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export default function BotMessage({
   message = "Hello! How can I assist you today?",
-  initial = false,
   quickReplies,
   delay = 0,
 }) {
@@ -24,14 +23,10 @@ export default function BotMessage({
 
   return (
     <>
-      <p className={`bot-message ${initial ? "bot-initial-message" : ""}`}>
-        {message}
-      </p>
-      {quickReplies && (
-          <div className="quickreplies">
-            {quickReplies}
-          </div>
-      )}
+      <div className="bot-initial-message" style={{ flexDirection: "column" }}>
+        <p className={`bot-message`}>{message}</p>
+        {quickReplies && <div className="quickreplies">{quickReplies}</div>}
+      </div>
     </>
   );
 }

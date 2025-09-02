@@ -40,11 +40,12 @@ export const handler = async (event) => {
       .join("\n");
 
     const prompt = `
-      IMPORTANT: If the question is NOT about Reveel or its articles, reply ONLY with: I can only answer questions about reveel. THIS IS THE ONLY VALID RESPONSE FOR IRRELEVANT QUESTIONS. DO NOT USE article-doesnt-exist FOR IRRELEVANT QUESTIONS. REPEAT: DO NOT USE article-doesnt-exist FOR IRRELEVANT QUESTIONS.
       You are a knowledge base assistant. Here is a list of article titles:
       ${articleList}
 
-      If the question IS about Reveel but no matching article exists, reply ONLY with: article-doesnt-exist.
+      You have to decide if the user is asking a question or not
+      if the user asks random stuff which is not a question reply with: I can only answer questions about reveel. feel free to ask more questions.
+      If the question asked has no matching article exists, reply ONLY with: article-doesnt-exist.
 
       Examples of irrelevant questions and their expected answer:
       Question: "What is the capital of France?"
@@ -60,9 +61,6 @@ export const handler = async (event) => {
       Answer: I can only answer questions about reveel
 
       Question: "hello"
-      Answer: I can only answer questions about reveel
-
-      Question: "who is the bay harbor butcher"
       Answer: I can only answer questions about reveel
 
       Question: "what the helly"

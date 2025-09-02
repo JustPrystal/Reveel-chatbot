@@ -13,40 +13,208 @@ function BotTyping() {
 }
 
 export default function ChatBot() {
+  const [step, setStep] = useState("initial");
   const [messages, setMessages] = useState([]);
   const [isBugReport, setIsBugReport] = useState(null);
   const [userInfo, setUserInfo] = useState({
     email: null,
     userRole: null,
-    description: null,
+    device: null,
   });
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const roles = [
+    { key: "viewer", label: "Viewer" },
+    { key: "subscriber", label: "Subscriber" },
+    { key: "filmmaker", label: "FilmMaker" },
+    { key: "advertiser", label: "Advertiser" },
+    { key: "affiliate", label: "Affiliate" },
+  ];
+  const bugTypes = [
+    { key: "website", label: "Website Bug" },
+    { key: "app", label: "App Bug" },
+    { key: "viewing_experience", label: "Viewing Experience Bug" },
+    { key: "other", label: "Other" },
+  ];
 
-  const handleEmailSubmit = (e) => {
-    e.preventDefault();
-    const emailValue = e.target.elements.email.value;
-    setUserInfo({ ...userInfo, email: emailValue });
+  // Helper Functions
+  const addMessage = (type, text, delay = 0) => {
+    const message = { type, text, delay };
+    setMessages((prev) => [...prev, message]);
   };
-  const handleDescriptionSubmit = async (e) => {
-    e.preventDefault();
-    const descriptionValue = e.target.elements.description.value;
-    await setUserInfo({ ...userInfo, description: descriptionValue });
-    try {
-      const res = await fetch(
-        `https://umer545.app.n8n.cloud/webhook/d90cc1bd-d36d-4185-b01b-16ba366872e7?response=${userInfo.description}&email=${userInfo.email}&bug_report=${isBugReport}`
+  const addQuickReply = (text, options, delay = 600, onSelect) => {
+    setMessages((prev) => [
+      ...prev,
+      { type: "bot", text, quickReplies: options, delay, onSelect },
+    ]);
+  };
+  const clearQuickReplies = () => {
+    setMessages((prev) =>
+      prev.map((msg) =>
+        msg.type === "bot" && msg.quickReplies
+          ? { ...msg, quickReplies: null }
+          : msg
+      )
+    );
+  };
+  const extractLink = (data) => {
+    const linkMatch = data.match(/https?:\/\/[^\s]+/);
+    return linkMatch ? linkMatch[0] : null;
+  };
+
+  const handleRoleSelection = (role) => {
+    setUserInfo((prev) => ({ ...prev, userRole: role.key }));
+    addMessage("user", role.label);
+
+    clearQuickReplies();
+
+    addMessage(
+      "bot",
+      "All set! Feel free to type your questions in the box below.",
+      600
+    );
+    setStep("chat");
+  };
+  const handleEmailStep = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(input)) {
+      addMessage("user", input);
+      addMessage(
+        "bot",
+        "Please enter a valid email address (e.g. user@example.com).",
+        600
       );
-      const data = await res.text();
-      console.log(data);
-    } catch (error) {
-      console.error("Error:", error);
+      setInput("");
+      return;
+    }
+    setUserInfo((prev) => ({ ...prev, email: input }));
+    addMessage("user", input);
+
+    if (isBugReport) {
+      addMessage(
+        "bot",
+        "What device(s) are you facing this bug on? (e.g., iPhone 12, MacBook Pro)",
+        600
+      );
+      setStep("device");
+    } else {
+      addQuickReply(
+        "Great! To help you better, could you tell me your role?",
+        roles.map((role) => (
+          <button key={role.key} onClick={() => handleRoleSelection(role)}>
+            {role.label}
+          </button>
+        )),
+        600,
+        handleRoleSelection
+      );
+    }
+    setInput("");
+  };
+  const handleDeviceStep = () => {
+    setUserInfo((prev) => ({ ...prev, device: input }));
+    addMessage("user", input);
+
+    addQuickReply(
+      "Great! To help you better, could you tell me your role?",
+      bugTypes.map((bugType) => (
+        <button
+          key={bugType.key}
+          onClick={() => handleBugTypeSelection(bugType)}
+        >
+          {bugType.label}
+        </button>
+      )),
+      600,
+      handleBugTypeSelection
+    );
+    // setStep("bugTypes");
+    setInput("");
+  };
+  const handleBugTypeSelection = (bugType) => {
+    setUserInfo((prev) => ({ ...prev, bugType: bugType.key }));
+    addMessage("user", bugType.label);
+
+    if (bugType.key === "app") {
+      setStep("app");
+      addMessage(
+        "bot",
+        "Please provide your OS version and the app version.",
+        600
+      );
+    } else if (bugType.key === "website") {
+      setStep("browser");
+      addMessage(
+        "bot",
+        "Please provide the name and version of the browser you were using.",
+        600
+      );
+    } else {
+      setStep("description");
+      addMessage("bot", "Please describe the bug in detail.", 600);
     }
   };
+  const handleChatStep = async () => {
+    const userMsg = input;
+    addMessage("user", userMsg);
+    setInput("");
+    setLoading(true);
 
-  const handleSend = async () => {
-    if (input.trim() === "") return;
-    const userMsg = { type: "user", text: input };
-    setMessages((prev) => [...prev, userMsg]);
+    try {
+      const res = await fetch(
+        `https://umer545.app.n8n.cloud/webhook/d90cc1bd-d36d-4185-b01b-16ba366872e7?response=${encodeURIComponent(
+          userMsg
+        )}&email=${encodeURIComponent(userInfo.email)}&bug-report=${
+          isBugReport ? "true" : "false"
+        }&user-role=${encodeURIComponent(userInfo.userRole)}`
+      );
+      let data = await res.text();
+      data = data.replace(/"/g, "");
+      const link = extractLink(data);
+      const messageText = link ? data.replace(link, "").trim() : data;
+      addMessage(
+        "bot",
+        <>
+          {messageText}
+          {link && (
+            <a href={link} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '4px' }}>
+              Link to Blog
+            </a>
+          )}&nbsp;Feel free to ask more questions
+        </>
+      );
+    } catch (err) {
+      addMessage("bot", "Sorry, there was an error getting a response.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const handleBrowserStep = () => {
+    setUserInfo((prev) => ({ ...prev, browser: input }));
+    addMessage("user", input);
+    addMessage("bot", "Please describe the bug in detail.", 600);
+    setStep("description");
+    setInput("");
+  };
+  const handleAppStep = () => {
+    setUserInfo((prev) => ({ ...prev, osVersion: input }));
+    addMessage("user", input);
+    addMessage("bot", "Please provide your app version.", 600);
+    setStep("appVersion");
+    setInput("");
+  };
+  const handleAppVersionStep = () => {
+    setUserInfo((prev) => ({ ...prev, appVersion: input }));
+    addMessage("user", input);
+    addMessage("bot", "Please describe the bug in detail.", 600);
+    setStep("description");
+    setInput("");
+  };
+  const handleDescriptionStep = async () => {
+    setUserInfo((prev) => ({ ...prev, description: input }));
+    addMessage("user", input);
+    setStep("submitted");
     setInput("");
     setLoading(true);
 
@@ -54,32 +222,47 @@ export default function ChatBot() {
       const res = await fetch(
         `https://umer545.app.n8n.cloud/webhook/d90cc1bd-d36d-4185-b01b-16ba366872e7?response=${encodeURIComponent(
           input
-        )}&email=${encodeURIComponent(userInfo.email)}&bug_report=${
-          isBugReport ? "true" : "false"
-        }&user-role=${encodeURIComponent(userInfo.userRole)}`
+        )}&email=${encodeURIComponent(userInfo.email)}&bug-report=true`
       );
-      let data = await res.text();
-      data = data.replace(/"/g, "");
-      if (data !== "bug_report") {
-        setMessages((prev) => [...prev, { type: "bot", text: data }]);
-      } else {
-        setMessages((prev) => [
-          ...prev,
-          {
-            type: "bot",
-            text: "Could you provide more information about the problem you are facing",
-          },
-        ]);
-        setIsBugReport(true);
-      }
-    } catch (err) {
-      setMessages((prev) => [
-        ...prev,
-        { type: "bot", text: "Sorry, there was an error getting a response." },
-      ]);
-      console.log(err);
+      const data = await res.text();
+      addMessage("bot", data);
+    } catch (error) {
+      addMessage(
+        "bot",
+        "Sorry, something went wrong while submitting your report."
+      );
+      console.error("Error:", error);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleSend = async () => {
+    if (input.trim() === "") return;
+    switch (step) {
+      case "email":
+        await handleEmailStep();
+        break;
+      case "device":
+        await handleDeviceStep();
+        break;
+      case "browser":
+        await handleBrowserStep();
+        break;
+      case "app":
+        await handleAppStep();
+        break;
+      case "appVersion":
+        await handleAppVersionStep();
+        break;
+      case "description":
+        await handleDescriptionStep();
+        break;
+      case "chat":
+        await handleChatStep();
+        break;
+      default:
+        break;
     }
   };
 
@@ -89,215 +272,86 @@ export default function ChatBot() {
         <span className="chatbot-title">Reveel Chatbot</span>
       </div>
       <div className="inner-dmxlcop12ze">
-        <div
-          className="bot-initial-message"
-          style={{ flexDirection: "column", alignItems: "flex-start" }}
-        >
-          <BotMessage
-            message="Hi there! How can I help you today?"
-            quickReplies={
-              isBugReport === null ? (
-                <>
-                  <button
-                    disabled={isBugReport !== null}
-                    onClick={() => setIsBugReport(true)}
-                  >
-                    Report a bug
-                  </button>
-                  <button
-                    disabled={isBugReport !== null}
-                    onClick={() => setIsBugReport(false)}
-                  >
-                    General Inquiry
-                  </button>
-                </>
-              ) : null
-            }
-          />
-        </div>
-        {isBugReport !== null && (
-          <UserMessage
-            message={
-              isBugReport
-                ? "I would like to report a bug"
-                : "I have a few questions about reveel"
-            }
-          />
-        )}
-        {isBugReport !== null && (
-          <BotMessage
-            message="Please enter your email so we can get in touch if needed."
-            delay={800}
-          />
-        )}
-        {isBugReport !== null && userInfo.email === null && (
-          <UserMessage
-            message={
+        <BotMessage
+          message="Hi there! How can I help you today?"
+          quickReplies={
+            isBugReport === null ? (
               <>
-                <form
-                  className="bot-initial-message"
-                  onSubmit={handleEmailSubmit}
-                  style={{
-                    flexDirection: "column",
-                    alignItems: "flex-start",
-                    gap: "10px",
-                  }}
+                <button
+                  disabled={isBugReport !== null}
+                  onClick={() => (setIsBugReport(true), setStep("email"))}
                 >
-                  <p>Enter Your email:</p>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="your@email.com"
-                    required
-                  />
-                  <button type="submit">Submit</button>
-                </form>
+                  Report a bug
+                </button>
+                <button
+                  disabled={isBugReport !== null}
+                  onClick={() => (setIsBugReport(false), setStep("email"))}
+                >
+                  General Inquiry
+                </button>
               </>
-            }
-            delay={800}
-          />
-        )}
-        {userInfo.email !== null && (
-          <UserMessage message={`${userInfo.email}`} />
-        )}
-        {isBugReport === true && userInfo.email !== null && (
-          <BotMessage
-            message={
-              <>
-                Could you provide a detailed description of the bug you are
-                facing,
-                <br />
-                <br />
-                1) please provide the device/devices you faced the bug on
-                <br />
-                2) if you faced the bug on the website please provide the name
-                of the browser you were using
-                <br />
-                3) if you faced the bug on the app then provide your OS version
-                and the app version
-              </>
-            }
-            delay={1200}
-          />
-        )}
-        {isBugReport === true &&
-          userInfo.email !== null &&
-          userInfo.description === null && (
+            ) : null
+          }
+        />
+        {isBugReport !== null && (
+          <>
             <UserMessage
               message={
-                <>
-                  <form
-                    className="bot-initial-message"
-                    onSubmit={handleDescriptionSubmit}
-                    style={{
-                      flexDirection: "column",
-                      alignItems: "flex-start",
-                      gap: "10px",
-                    }}
-                  >
-                    <p>Enter a brief description of the issue:</p>
-                    <textarea
-                      name="description"
-                      placeholder="Describe the issue..."
-                      required
-                      style={{
-                        width: "100%",
-                        minHeight: "200px",
-                        maxHeight: "200px",
-                        maxWidth: "300px",
-                      }}
-                    />
-                    <button type="submit">Submit</button>
-                  </form>
-                </>
+                isBugReport
+                  ? "I would like to report a bug"
+                  : "I have a few questions about reveel"
               }
-              delay={1200}
             />
-          )}
-        {isBugReport === true &&
-          userInfo.email !== null &&
-          userInfo.description !== null && (
-            <>
-              <UserMessage message={`${userInfo.description}`} />
-              <BotMessage
-                message={`Thank you for your report! Our team will review it and get back to you as soon as possible.`}
-                delay={600}
-              />
-            </>
-          )}
-        {isBugReport === false && userInfo.email !== null && (
-          <div
-            className="bot-initial-message"
-            style={{ flexDirection: "column", alignItems: "flex-start" }}
-          >
             <BotMessage
-              message="Great! To help you better, could you tell me your role?"
-              delay={800}
-              quickReplies={
-                userInfo.userRole === null ? (
-                  <>
-                    <button
-                      disabled={userInfo.userRole !== null}
-                      onClick={() =>
-                        setUserInfo({ ...userInfo, userRole: "viewer" })
-                      }
-                    >
-                      Viewer
-                    </button>
-                    <button
-                      disabled={userInfo.userRole !== null}
-                      onClick={() =>
-                        setUserInfo({ ...userInfo, userRole: "subscriber" })
-                      }
-                    >
-                      Subscriber
-                    </button>
-                    <button
-                      disabled={userInfo.userRole !== null}
-                      onClick={() =>
-                        setUserInfo({ ...userInfo, userRole: "film_maker" })
-                      }
-                    >
-                      Film Maker
-                    </button>
-                    <button
-                      disabled={userInfo.userRole !== null}
-                      onClick={() =>
-                        setUserInfo({ ...userInfo, userRole: "advertiser" })
-                      }
-                    >
-                      Advertiser
-                    </button>
-                    <button
-                      disabled={userInfo.userRole !== null}
-                      onClick={() =>
-                        setUserInfo({ ...userInfo, userRole: "affiliate" })
-                      }
-                    >
-                      Affiliate
-                    </button>
-                  </>
-                ) : null
-              }
+              message="Please enter your email so we can get in touch if needed."
+              delay={600}
             />
-          </div>
+          </>
+        )}
+        {messages.map((msg, idx) =>
+          msg.type === "bot" ? (
+            <BotMessage
+              key={idx}
+              message={msg.text}
+              delay={msg.delay}
+              quickReplies={msg.quickReplies}
+            />
+          ) : (
+            <UserMessage key={idx} message={msg.text} delay={msg.delay} />
+          )
+        )}
+        {loading && <BotTyping />}
+
+        {/* {isBugReport === true && userInfo.email !== null && (
+          <button
+            className="reset-chat-btn"
+            style={{
+              marginTop: "10px",
+              border: "none",
+              color: "#333",
+              background: "transparent",
+              padding: "8px 16px",
+              borderRadius: "4px",
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              setMessages([]);
+              setIsBugReport(null);
+              setUserInfo({
+                email: null,
+                userRole: null,
+                description: null,
+              });
+              setInput("");
+              setLoading(false);
+            }}
+          >
+            Reset Chat
+          </button>
         )}
         {isBugReport === false &&
           userInfo.email !== null &&
-          userInfo.userRole !== null && (
-            <>
-              <UserMessage message={`${userInfo.userRole}`} />
-              <BotMessage
-                message={
-                  "All set! Feel free to type your questions in the box below."
-                }
-                delay={800}
-              />
-            </>
-          )}
-        {isBugReport === true &&
-          userInfo.email !== null &&
-          userInfo.description !== null && (
+          userInfo.role !== null && (
             <button
               className="reset-chat-btn"
               style={{
@@ -323,26 +377,12 @@ export default function ChatBot() {
             >
               Reset Chat
             </button>
-          )}
-        {messages.map((msg, idx) =>
-          msg.type === "bot" ? (
-            <BotMessage key={idx} message={msg.text} />
-          ) : (
-            <UserMessage key={idx} message={msg.text} />
-          )
-        )}
-        {loading && <BotTyping />}
+          )} */}
       </div>
       <div className="input-field-x4cb14x">
         <input
           type="text"
-          disabled={
-            !(
-              isBugReport === false &&
-              userInfo.email !== null &&
-              userInfo.userRole !== null
-            ) || loading
-          }
+          disabled={loading}
           placeholder="Type your message..."
           className="bot-input-field-x1nmsnr92"
           value={input}
