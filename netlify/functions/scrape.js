@@ -47,6 +47,7 @@ export const handler = async (event) => {
       This is the user question: "${query}"
 
       Rules:
+      - Determine if the input is intended as a question, even if informal or missing punctuation (e.g., "whats reveel" or "hey twin whats reveel"). If it clearly asks for information, treat it as a question.
       - If the input is NOT a question, respond ONLY with -2.
       - If it IS a question and matches an article, respond ONLY with the article's numeric index (one integer).
       - If it IS a question but there is no relevant article, respond ONLY with -1.
