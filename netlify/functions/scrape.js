@@ -44,6 +44,20 @@ export const handler = async (event) => {
       ${articleList}
 
       You have to decide if the user is asking a question or not
+      the users prompt has to be interrogative
+      example of questions u can answer with article doesnt exist to
+
+      "what is photosynthesis"
+      "how does photosynthesis work"
+      "what are the stages of photosynthesis"
+
+      Examples of questions u cannot answer with article-doesnt-exist:
+      whats up
+      hi
+      123123@gmail.com
+      etc
+      
+
       if the user asks random stuff which is not a question reply with: I can only answer questions about reveel. feel free to ask more questions.
       If the question asked has no matching article exists, reply ONLY with: article-doesnt-exist.
     
@@ -52,7 +66,9 @@ export const handler = async (event) => {
       2) The question cannot be something irrelevant it must seem like a valid question 
       3) No Inappropriate questions/ no swear words
       if u cant reply with article-doesnt-exist just reply with: "Im sorry, i cannot answer that"
+      4) The users prompt is interrogative ie it seems like a question
 
+    
       reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
       If the question contains extra words, typos, or repeated phrases, ignore them and focus on the main topic. Always pick the closest relevant article, even if the question is not perfectly phrased.
 
