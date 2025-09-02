@@ -18,7 +18,7 @@ export const handler = async (event) => {
       const fileData = readFileSync(articlesPath, "utf-8");
       articles = JSON.parse(fileData);
     } catch (err) {
-      console.log(err)
+      console.log(err);
       return {
         statusCode: 500,
         body: JSON.stringify({ error: "Could not read articles.json" }),
@@ -35,54 +35,24 @@ export const handler = async (event) => {
     const openAiApiKey = process.env.OPENAI_API_KEY;
 
     // Prepare numbered list for GPT (titles only)
-    const articleList = articles
-      .map((a, i) => `${i + 1}. ${a.title}`)
-      .join("\n");
+    const articleList = articles.map((article, idx) => ({
+      index: idx,
+      title: article.title,
+    }));
+
+    console.log("Article List:\n", articleList);
 
     const prompt = `
-      You are a knowledge base assistant. Here is a list of article titles:
-      ${articleList}
+      You are a knowledge base assistant. Here is a list of article objects with their respective indices:
+      ${JSON.stringify(articleList, null, 2)}
 
-      You have to decide if the user is asking a question or not.
-      If the input is NOT a question, reply ONLY with: article-doesnt-exist.
-      If the input IS a question but has no matching article, reply ONLY with: article-doesnt-exist.
-      If the question is relevant, reply ONLY with the number of the most relevant article (just the number, nothing else).
-      If the question contains extra words, typos, or repeated phrases, ignore them and focus on the main topic. Always pick the closest relevant article, even if the question is not perfectly phrased.
+      This is the user question: "${query}"
 
-      Examples of irrelevant or non-Reveel questions and their expected answer:
-      Question: "What is the capital of France?"
-      Answer: article-doesnt-exist
-
-      Question: "Tell me a joke."
-      Answer: I cannot answer that.
-
-      Question: "wsg gng"
-      Answer: I cannot answer that.
-
-      Question: "yo what's up"
-      Answer: I cannot answer that.
-
-      Question: "hello"
-      Answer: I cannot answer that.
-
-      Question: "what the helly"
-      Answer: I cannot answer that.
-
-      Examples of relevant questions and their expected answer:
-      Question: "what is reveel about"
-      Answer: 7
-
-      Question: "what is reveel gng pls tell gng plsssss"
-      Answer: 7
-
-      Question: "how do i sign up for reveel"
-      Answer: 5
-
-      Question: Are subtitles required for monetization?
-      Answer: 25
-
-      Do NOT format your answer as markdown, do NOT include the title, do NOT add any extra text.
-      Question: "${query}"
+      First check if the user's question statement in the inverted commas is actually an interrogative statement (i.e. Is it a question?)
+      If it is indeed a question: Check:
+      1. Does the question contain any keywords that match the article titles? If so, respond with the index of the article that best answers the question.
+      2. If not, respond with "-1"
+      If the question is not an interrogative statement, respond with "-2"
       `;
 
     const gptResponse = await fetch(
@@ -116,13 +86,13 @@ export const handler = async (event) => {
         ? result.choices[0].message.content.trim()
         : "";
 
-    if (answer === "article-doesnt-exist") {
+    if (answer === '-1') {
       return {
         statusCode: 200,
         body: JSON.stringify({ error: "article-doesnt-exist" }),
       };
     }
-    if (answer === "I cannot answer that.") {
+    if (answer === "-2") {
       return {
         statusCode: 200,
         body: JSON.stringify("I cannot answer that."),

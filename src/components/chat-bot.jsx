@@ -13,6 +13,7 @@ function BotTyping() {
 }
 
 export default function ChatBot() {
+
   const [step, setStep] = useState("initial");
   const [messages, setMessages] = useState([]);
   const [isBugReport, setIsBugReport] = useState(null);
@@ -116,7 +117,7 @@ export default function ChatBot() {
     addMessage("user", input);
 
     addQuickReply(
-      "Great! To help you better, could you tell me your role?",
+      "What type of bug are you experiencing?",
       bugTypes.map((bugType) => (
         <button
           key={bugType.key}
