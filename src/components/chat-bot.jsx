@@ -66,7 +66,6 @@ export default function ChatBot() {
   const handleRoleSelection = (role) => {
     setUserInfo((prev) => ({ ...prev, userRole: role.key }));
     addMessage("user", role.label);
-
     clearQuickReplies();
 
     addMessage(
@@ -76,7 +75,7 @@ export default function ChatBot() {
     );
     setStep("chat");
   };
-  const handleEmailStep = () => {
+  const handleEmailStep = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(input)) {
       addMessage("user", input);
@@ -88,7 +87,7 @@ export default function ChatBot() {
       setInput("");
       return;
     }
-    setUserInfo((prev) => ({ ...prev, email: input }));
+    await setUserInfo((prev) => ({ ...prev, email: input }));
     addMessage("user", input);
 
     if (isBugReport) {
@@ -109,6 +108,7 @@ export default function ChatBot() {
         600,
         handleRoleSelection
       );
+      setStep("role");
     }
     setInput("");
   };
@@ -365,7 +365,7 @@ export default function ChatBot() {
       <div className="input-field-x4cb14x">
         <input
           type="text"
-          disabled={loading}
+          disabled={loading || step === "role" || step === "initial"}
           placeholder="Type your message..."
           className="bot-input-field-x1nmsnr92"
           value={input}
