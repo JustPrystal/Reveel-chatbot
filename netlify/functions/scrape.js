@@ -47,26 +47,7 @@ export const handler = async (event) => {
       if the user asks random stuff which is not a question reply with: I can only answer questions about reveel. feel free to ask more questions.
       If the question asked has no matching article exists, reply ONLY with: article-doesnt-exist.
 
-      Examples of irrelevant questions and their expected answer:
-      Question: "What is the capital of France?"
-      Answer: I can only answer questions about reveel
-
-      Question: "Tell me a joke."
-      Answer: I can only answer questions about reveel
-
-      Question: "wsg gng"
-      Answer: I can only answer questions about reveel
-
-      Question: "yo what's up"
-      Answer: I can only answer questions about reveel
-
-      Question: "hello"
-      Answer: I can only answer questions about reveel
-
-      Question: "what the helly"
-      Answer: I can only answer questions about reveel
-
-      If the question is relevant, reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
+      reply ONLY with the number of the most relevant article (just the number, nothing else). If none are relevant, reply ONLY with: article-doesnt-exist.
       If the question contains extra words, typos, or repeated phrases, ignore them and focus on the main topic. Always pick the closest relevant article, even if the question is not perfectly phrased.
 
       Examples of relevant questions and their expected answer:
