@@ -103,10 +103,10 @@ export const handler = async (event) => {
         body: JSON.stringify({ error: "article-doesnt-exist" }),
       };
     }
-    if (answer === "I can only answer questions about reveel") {
+    if (answer === "I can only answer questions") {
       return {
         statusCode: 200,
-        body: JSON.stringify("I can only answer questions about reveel"),
+        body: JSON.stringify("I can only answer questions"),
       };
     }
 
