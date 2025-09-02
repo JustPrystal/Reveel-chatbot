@@ -26,7 +26,8 @@ const interrogatives = [
 function isQuestion(str) {
   const lower = str.trim().toLowerCase();
   return (
-    interrogatives.some((w) => lower.startsWith(w + " ")) || lower.endsWith("?")
+    interrogatives.some((w) => lower.includes(w + " ")) ||
+    lower.endsWith("?")
   );
 }
 
