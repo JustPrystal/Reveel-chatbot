@@ -11,6 +11,12 @@ export const handler = async (event) => {
         body: JSON.stringify({ error: "Missing query parameter." }),
       };
     }
+    if (/^\d+$/.test(query)) {
+      return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "i cannot answer that" }),
+      };
+    }
 
     const articlesPath = path.join(process.cwd(), "articles.json");
     let articles = [];
@@ -39,7 +45,7 @@ export const handler = async (event) => {
       .map((a, i) => `${i + 1}. ${a.title}`)
       .join("\n");
 
-const prompt = `
+    const prompt = `
 You are a strict Q&A assistant. You have a knowledge base of articles:
 ${articleList}
 
