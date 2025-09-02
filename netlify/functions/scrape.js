@@ -14,7 +14,7 @@ export const handler = async (event) => {
     if (/^\d+$/.test(query)) {
       return {
         statusCode: 200,
-        body: JSON.stringify({ message: "i cannot answer that" }),
+        body: JSON.stringify("i cannot answer that"),
       };
     }
 
