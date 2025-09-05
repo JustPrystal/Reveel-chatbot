@@ -1,5 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
+:root {
+  /* Backgrounds */
+  --color-bg-main: #ffffff;
+  --color-bg-chat: #fdfdfd;
+  --color-bg-bot: #fef2f2; /* very light red tint */
+  --color-bg-user: #8d0000; /* main brand red */
+  --color-bg-header-gradient-start: #8d0000;
+  --color-bg-header-gradient-end: #c53030; /* slightly lighter red */
+  --color-bg-typing: #fde8e8;
+  --color-bg-quickreply: #fde8e8;
+  --color-bg-input: #fff;
+  --color-bg-scrollbar-thumb: #d1d5db;
+  --color-bg-scrollbar-track: transparent;
+
+  /* Borders */
+  --color-border-main: #f3cccc;
+  --color-border-input: #e3bfbf;
+  --color-border-input-focus: #8d0000;
+  --color-border-initial: #e3bfbf;
+
+  /* Text */
+  --color-text-main: #111827;
+  --color-text-header: #ffffff;
+  --color-text-bot: #1e1e1e;
+  --color-text-user: #ffffff;
+  --color-text-quickreply: #8d0000;
+  --color-text-input-placeholder: #6b7280;
+  --color-text-input: #111827;
+
+  /* Buttons */
+  --color-btn-send-bg: #8d0000;
+  --color-btn-send-bg-hover: #a11616;
+  --color-btn-send-text: #ffffff;
+
+  --color-btn-quickreply-bg-hover: #8d0000;
+  --color-btn-quickreply-text-hover: #ffffff;
+
+  /* Typing Indicator */
+  --color-typing-dot: #8d0000;
+
+  /* Shadows */
+  --color-shadow-main: 0 6px 24px rgba(0, 0, 0, 0.06);
+  --color-shadow-bot: 0 1px 4px rgba(141, 0, 0, 0.15);
+  --color-shadow-user: 0 1px 4px rgba(141, 0, 0, 0.2);
+  --color-shadow-quickreply-hover: 0 4px 10px rgba(141, 0, 0, 0.25);
+}
+
 *,
 ::before,
 ::after {
@@ -15,28 +62,53 @@ body,
   width: 100%;
   font-family: "Inter", sans-serif;
   background: #00000029;
-  color: #111827;
+  color: var(--color-text-main);
 }
-
+.chat-window{
+  max-width: 400px;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  bottom: 115px;
+  right: 50px;
+}
+.chat-window::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    rotate: 45deg;
+    right: 14px;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+}
+.open-chat-btn{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 24px;
+  border: none;
+}
 /* Chatbot Container */
 .chatbot-view-zl2mxh3zm {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  background: var(--color-bg-main);
+  box-shadow: var(--color-shadow-main);
   border-radius: 20px;
   overflow: hidden;
   margin: auto;
-  border: 1px solid #e5e7eb;
-  max-width: 575px;
 }
 
 /* Header */
 .chatbot-header {
-  background: linear-gradient(20deg, #667eea 0%, #8b5cf6 100%);
-  padding: 24px;
+  background: linear-gradient(20deg, var(--color-bg-header-gradient-start) 0%, var(--color-bg-header-gradient-end) 100%);
+  padding: 16px 24px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -44,25 +116,26 @@ body,
 
 .chatbot-title {
   font-weight: 600;
-  color: white;
+  color: var(--color-text-header);
   font-size: 18px;
 }
+
 .container {
   flex: 1 1 auto;
   overflow-y: auto;
 }
 .container::-webkit-scrollbar {
   width: 6px;
-  background: transparent;
+  background: var(--color-bg-scrollbar-track);
 }
 
 .container::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: var(--color-bg-scrollbar-thumb);
   border-radius: 4px;
 }
 
 .container::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--color-bg-scrollbar-track);
 }
 .container::-webkit-scrollbar-button {
   display: none;
@@ -72,7 +145,7 @@ body,
 /* For Firefox */
 .container {
   scrollbar-width: thin;
-  scrollbar-color: #d1d5db transparent;
+  scrollbar-color: var(--color-bg-scrollbar-thumb) var(--color-bg-scrollbar-track);
 }
 /* Chat Area */
 .inner-dmxlcop12ze {
@@ -81,33 +154,33 @@ body,
   flex-direction: column;
   min-height: 100%;
   gap: 14px;
-  background: #f9fafb;
+  background: var(--color-bg-chat);
 }
 
 .bot-message {
-  background: #f0f2f5;
-  color: #1e1e1e;
+  background: var(--color-bg-bot);
+  color: var(--color-text-bot);
   border: none;
   padding: 12px 18px;
   border-radius: 24px 24px 24px 4px;
   align-self: flex-start;
   font-size: 15px;
   line-height: 1.5;
-  box-shadow: 0 1px 4px rgba(99, 102, 241, 0.15);
+  box-shadow: var(--color-shadow-bot);
   animation: fadeInMsg 0.4s ease;
   overflow-wrap: anywhere;
 }
 
 .user-message {
-  background: #667eea;
-  color: #ffffff;
+  background: var(--color-bg-user);
+  color: var(--color-text-user);
   padding: 12px 18px;
   border-radius: 24px 24px 4px 24px;
   align-self: flex-end;
   max-width: 80%;
   font-size: 15px;
   line-height: 1.5;
-  box-shadow: 0 1px 4px rgba(79, 70, 229, 0.15);
+  box-shadow: var(--color-shadow-user);
   animation: fadeInMsg 0.4s ease;
   overflow-wrap: anywhere;
 }
@@ -115,10 +188,10 @@ body,
 /* Input Section */
 .input-field-x4cb14x {
   padding: 12px 16px;
-  background: #ffffff;
+  background: var(--color-bg-main);
   display: flex;
   align-items: center;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--color-border-main);
   gap: 10px;
   font-size: 14px;
 }
@@ -127,25 +200,25 @@ body,
   flex: 1;
   padding: 12px 16px;
   border-radius: 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--color-border-input);
   font-size: 14px;
-  background-color: #f9fafb;
+  background-color: var(--color-bg-input);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .bot-input-field-x1nmsnr92::placeholder {
-  color: #6b7280;
+  color: var(--color-text-input-placeholder);
 }
 
 .bot-input-field-x1nmsnr92:focus {
-  border-color: #6366f1;
+  border-color: var(--color-border-input-focus);
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
 }
 
 /* Send Button */
 .input-send-btn {
-  background: #6366f1;
-  color: white;
+  background: var(--color-btn-send-bg);
+  color: var(--color-btn-send-text);
   border: none;
   width: 40px;
   height: 40px;
@@ -158,14 +231,14 @@ body,
 }
 
 .input-send-btn:hover {
-  background: #4f46e5;
+  background: var(--color-btn-send-bg-hover);
   transform: scale(1.05);
 }
 
 .input-send-btn svg {
   width: 22px;
   height: 22px;
-  fill: white;
+  fill: var(--color-btn-send-text);
 }
 
 /* Typing Indicator */
@@ -173,7 +246,7 @@ body,
   display: flex;
   align-items: center;
   gap: 4px;
-  background: #eef2ff;
+  background: var(--color-bg-typing);
   border-radius: 16px 16px 16px 4px;
   padding: 10px 16px;
 }
@@ -181,7 +254,7 @@ body,
 .typing-dot {
   width: 6px;
   height: 6px;
-  background: #6366f1;
+  background: var(--color-typing-dot);
   border-radius: 50%;
   opacity: 0.6;
   animation: typing-bounce 1s infinite alternate;
@@ -231,8 +304,8 @@ body,
 }
 
 .quickreplies button {
-  background: #eef2ff;
-  color: #4f46e5;
+  background: var(--color-bg-quickreply);
+  color: var(--color-text-quickreply);
   border: none;
   border-radius: 12px;
   padding: 6px 16px;
@@ -242,10 +315,10 @@ body,
 }
 
 .quickreplies button:hover {
-  background: #4f46e5;
-  color: white;
+  background: var(--color-btn-quickreply-bg-hover);
+  color: var(--color-btn-quickreply-text-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+  box-shadow: var(--color-shadow-quickreply-hover);
 }
 .bot-initial-message {
   display: flex;
@@ -264,27 +337,27 @@ textarea {
   flex: 1;
   padding: 8px 12px;
   font-size: 14px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--color-border-initial);
   border-radius: 10px;
-  background: #ffffff;
-  color: #111827;
+  background: var(--color-bg-main);
+  color: var(--color-text-input);
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .bot-initial-message input::placeholder {
-  color: #6b7280;
+  color: var(--color-text-input-placeholder);
   font-size: 13px;
 }
 
 .bot-initial-message input:focus {
-  border-color: #6366f1;
+  border-color: var(--color-border-input-focus);
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
 }
 
 .bot-initial-message button[type="submit"] {
-  background: white;
-  color: black;
+  background: var(--color-bg-main);
+  color: var(--color-text-main);
   border: none;
   padding: 8px 14px;
   font-size: 13px;

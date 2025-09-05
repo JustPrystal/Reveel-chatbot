@@ -25,9 +25,9 @@ export default function ChatBot() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const roles = [
-    { key: "viewer", label: "Viewer" },
-    { key: "subscriber", label: "Subscriber" },
-    { key: "filmmaker", label: "FilmMaker" },
+    { key: "viewer", label: "Free user" },
+    { key: "subscriber", label: "Premium/VIP Subscriber" },
+    { key: "filmmaker", label: "Filmmaker" },
     { key: "advertiser", label: "Advertiser" },
     { key: "affiliate", label: "Affiliate" },
   ];
@@ -99,7 +99,7 @@ export default function ChatBot() {
       setStep("device");
     } else {
       addQuickReply(
-        "Great! To help you better, could you tell me your role?",
+        "Great! To help you better, what kind of account you have with us?",
         roles.map((role) => (
           <button key={role.key} onClick={() => handleRoleSelection(role)}>
             {role.label}
@@ -338,7 +338,7 @@ export default function ChatBot() {
               zIndex: 1000,
               border: "none",
               color: "white",
-              background: "#7273ee",
+              background: "#c53030",
               padding: "8px 16px",
               borderRadius: "24px",
               boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
