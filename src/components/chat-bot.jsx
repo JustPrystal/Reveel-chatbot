@@ -99,7 +99,7 @@ export default function ChatBot() {
       setStep("device");
     } else {
       addQuickReply(
-        "Great! To help you better, what kind of account you have with us?",
+        "Great! To help you better, what kind of account do you have with us?",
         roles.map((role) => (
           <button key={role.key} onClick={() => handleRoleSelection(role)}>
             {role.label}
