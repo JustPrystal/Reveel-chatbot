@@ -126,7 +126,7 @@ body,
   overflow-y: auto;
 }
 .container::-webkit-scrollbar {
-  width: 6px;
+  width: 1px;
   background: var(--color-bg-scrollbar-track);
 }
 
@@ -144,7 +144,7 @@ body,
   width: 0;
 }
 .container {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: var(--color-bg-scrollbar-thumb) var(--color-bg-scrollbar-track);
 }
 .inner-dmxlcop12ze {
