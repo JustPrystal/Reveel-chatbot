@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BotMessage from "./chatbot-components/bot-message";
 import UserMessage from "./chatbot-components/user-message";
 
@@ -13,7 +13,6 @@ function BotTyping() {
 }
 
 export default function ChatBot() {
-
   const [step, setStep] = useState("initial");
   const [messages, setMessages] = useState([]);
   const [isBugReport, setIsBugReport] = useState(null);
@@ -37,6 +36,31 @@ export default function ChatBot() {
     { key: "viewing_experience", label: "Viewing Experience Bug" },
     { key: "other", label: "Other" },
   ];
+  const containerRef = useRef(null);
+  const messagesEndRef = useRef(null);
+  const innerContentRef = useRef(null);
+
+  // ResizeObserver for auto-scroll on height changes
+  useEffect(() => {
+    const innerContent = innerContentRef.current;
+    if (!innerContent) return;
+
+    const resizeObserver = new ResizeObserver(() => {
+      // Scroll to bottom when content height increases
+      if (containerRef.current) {
+        containerRef.current.scrollTo({
+          top: containerRef.current.scrollHeight,
+          behavior: 'smooth'
+        });
+      }
+    });
+
+    resizeObserver.observe(innerContent);
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, []);
 
   // Helper Functions
   const addMessage = (type, text, delay = 0) => {
@@ -87,7 +111,7 @@ export default function ChatBot() {
       setInput("");
       return;
     }
-    await setUserInfo((prev) => ({ ...prev, email: input }));
+    setUserInfo((prev) => ({ ...prev, email: input }));
     addMessage("user", input);
 
     if (isBugReport) {
@@ -163,7 +187,7 @@ export default function ChatBot() {
 
     try {
       const res = await fetch(
-        `https://umer545.app.n8n.cloud/webhook/d90cc1bd-d36d-4185-b01b-16ba366872e7?response=${encodeURIComponent(
+        `https://n8n.reveelentertainment.com/webhook/d90cc1bd-d36d-4185-b01b-16ba366872e7?response=${encodeURIComponent(
           userMsg
         )}&email=${encodeURIComponent(userInfo.email)}&bug-report=${
           isBugReport ? "true" : "false"
@@ -279,9 +303,37 @@ export default function ChatBot() {
     <div className="chatbot-view-zl2mxh3zm">
       <div className="chatbot-header">
         <span className="chatbot-title">Reveel Chatbot</span>
+        <button
+          className="global-reset-chat-btn"
+          style={{
+            width: "fit-content",
+            zIndex: 1000,
+            border: "none",
+            color: "#c53030",
+            background: "white",
+            padding: "8px 16px",
+            borderRadius: "24px",
+            cursor: "pointer",
+            fontWeight: "600",
+          }}
+          onClick={() => {
+            setMessages([]);
+            setIsBugReport(null);
+            setUserInfo({
+              email: null,
+              userRole: null,
+              device: null,
+            });
+            setInput("");
+            setLoading(false);
+            setStep("initial");
+          }}
+        >
+          Reset Chat
+        </button>
       </div>
-      <div className="container">
-        <div className="inner-dmxlcop12ze">
+      <div className="container" ref={containerRef}>
+        <div className="inner-dmxlcop12ze" ref={innerContentRef}>
           <BotMessage
             message="Hi there! How can I help you today?"
             quickReplies={
@@ -331,37 +383,10 @@ export default function ChatBot() {
             )
           )}
           {loading && <BotTyping />}
-          <button
-            className="global-reset-chat-btn"
-            style={{
-              width: "fit-content",
-              zIndex: 1000,
-              border: "none",
-              color: "white",
-              background: "#c53030",
-              padding: "8px 16px",
-              borderRadius: "24px",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-              cursor: "pointer",
-              margin: "auto auto 0",
-            }}
-            onClick={() => {
-              setMessages([]);
-              setIsBugReport(null);
-              setUserInfo({
-                email: null,
-                userRole: null,
-                device: null,
-              });
-              setInput("");
-              setLoading(false);
-              setStep("initial");
-            }}
-          >
-            Reset Chat
-          </button>
+          <div ref={messagesEndRef} />
         </div>
       </div>
+
       <div className="input-field-x4cb14x">
         <input
           type="text"

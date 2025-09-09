@@ -85,7 +85,7 @@ export const handler = async (event) => {
     if (!match) {
       return {
         statusCode: 200,
-        body: JSON.stringify("Could You rephrase your question?"),
+        body: JSON.stringify("Could you please rephrase your question?"),
       };
     }
 
@@ -99,7 +99,7 @@ export const handler = async (event) => {
     if (answerNum === -2) {
       return {
         statusCode: 200,
-        body: JSON.stringify("Could You rephrase your question?"),
+        body: JSON.stringify("Could you please rephrase your question?"),
       };
     }
 
