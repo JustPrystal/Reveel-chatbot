@@ -40,13 +40,11 @@ export default function ChatBot() {
   const messagesEndRef = useRef(null);
   const innerContentRef = useRef(null);
 
-  // ResizeObserver for auto-scroll on height changes
   useEffect(() => {
     const innerContent = innerContentRef.current;
     if (!innerContent) return;
 
     const resizeObserver = new ResizeObserver(() => {
-      // Scroll to bottom when content height increases
       if (containerRef.current) {
         containerRef.current.scrollTo({
           top: containerRef.current.scrollHeight,
