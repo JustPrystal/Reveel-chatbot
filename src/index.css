@@ -61,8 +61,8 @@ body,
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
-  background: #00000029;
   color: var(--color-text-main);
+  pointer-events: none;
 }
 .chat-window{
   max-width: 400px;

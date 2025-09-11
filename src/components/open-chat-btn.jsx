@@ -8,7 +8,7 @@ export default function OpenChatBtn() {
   };
   return (
     <>
-      <button className="open-chat-btn" onClick={handleClick}>
+      <button className="open-chat-btn" onClick={handleClick} style={{ pointerEvents: 'auto' }}>
         {!open ? (
           <svg
             width="100%"
@@ -37,7 +37,7 @@ export default function OpenChatBtn() {
         )}
       </button>
       {open && (
-        <div className="chat-window">
+        <div className="chat-window" style={{ pointerEvents: 'auto'}}>
           <ChatBot />
         </div>
       )}
