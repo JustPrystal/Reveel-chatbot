@@ -73,16 +73,6 @@ body,
   right: 0;
   
 }
-.chat-window::after{
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  rotate: 45deg;
-  right: 14px;
-  background-color: white;
-  width: 15px;
-  height: 15px;
-}
 .open-chat-btn{
   position: absolute;
   bottom: 0;
@@ -103,7 +93,7 @@ body,
   border-radius: 20px;
   overflow: hidden;
   margin: auto;
-  box-shadow: var(--color-shadow-main);
+  border: 1px solid var(--color-border-main);
 }
 
 /* Header */
