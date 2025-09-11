@@ -71,6 +71,8 @@ body,
   position: absolute;
   bottom: 65px;
   right: 0;
+  box-shadow: var(--color-shadow-main);
+  
 }
 .chat-window::after{
     content: '';
@@ -99,7 +101,6 @@ body,
   display: flex;
   flex-direction: column;
   background: var(--color-bg-main);
-  box-shadow: var(--color-shadow-main);
   border-radius: 20px;
   overflow: hidden;
   margin: auto;
