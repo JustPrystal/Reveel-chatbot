@@ -41,7 +41,7 @@
   --color-typing-dot: #8d0000;
 
   /* Shadows */
-  --color-shadow-main: 0 6px 24px rgba(0, 0, 0, 0.06);
+  --color-shadow-main: 0 6px 24px rgba(0, 0, 0, 0.1v);
   --color-shadow-bot: 0 1px 4px rgba(141, 0, 0, 0.15);
   --color-shadow-user: 0 1px 4px rgba(141, 0, 0, 0.2);
   --color-shadow-quickreply-hover: 0 4px 10px rgba(141, 0, 0, 0.25);
@@ -71,18 +71,17 @@ body,
   position: absolute;
   bottom: 65px;
   right: 0;
-  box-shadow: var(--color-shadow-main);
   
 }
 .chat-window::after{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    rotate: 45deg;
-    right: 14px;
-    background-color: white;
-    width: 15px;
-    height: 15px;
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  rotate: 45deg;
+  right: 14px;
+  background-color: white;
+  width: 15px;
+  height: 15px;
 }
 .open-chat-btn{
   position: absolute;
@@ -104,6 +103,7 @@ body,
   border-radius: 20px;
   overflow: hidden;
   margin: auto;
+  box-shadow: var(--color-shadow-main);
 }
 
 /* Header */
