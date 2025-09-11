@@ -112,6 +112,7 @@ body,
   display: flex;
   align-items: center;
   gap: 12px;
+  justify-content: space-between;
 }
 
 .chatbot-title {
@@ -125,7 +126,7 @@ body,
   overflow-y: auto;
 }
 .container::-webkit-scrollbar {
-  width: 6px;
+  width: 1px;
   background: var(--color-bg-scrollbar-track);
 }
 
@@ -142,14 +143,12 @@ body,
   height: 0;
   width: 0;
 }
-/* For Firefox */
 .container {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: var(--color-bg-scrollbar-thumb) var(--color-bg-scrollbar-track);
 }
-/* Chat Area */
 .inner-dmxlcop12ze {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
